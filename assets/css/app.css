@@ -24,4 +24,8 @@
   color: #fff;
 }
 
+.mission-vision .blue-icon::before {
+  color: #000;
+}
+
 /*# sourceMappingURL=app.css.map */
