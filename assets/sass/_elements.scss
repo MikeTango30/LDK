@@ -3,8 +3,18 @@
   height: 250px;
 }
 
-//map marker
+// map marker
 .circle-solid {
   height: 5px;
   width: 5px;
+}
+
+// sticky header
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + main {
+  padding-top: 102px;
 }

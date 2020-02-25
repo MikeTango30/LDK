@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cb9b277-c205-4cc8-87f5-a821afa90d01" name="Default Changelist" comment="" />
+    <list default="true" id="0cb9b277-c205-4cc8-87f5-a821afa90d01" name="Default Changelist" comment="map on all pages">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/stickyHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/_elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/_elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,11 +38,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YIQNMFjbvuIQ992ryeF4SLQctr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -42,9 +55,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/map" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -53,6 +67,7 @@
       <recent name="$PROJECT_DIR$/assets/images/map" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/assets/js/map" />
     </key>
   </component>
@@ -66,18 +81,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582627587370</updated>
-      <workItem from="1582627588763" duration="5924000" />
+      <workItem from="1582627588763" duration="9586000" />
     </task>
+    <task id="LOCAL-00001" summary="map on all pages">
+      <created>1582636370199</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582636370199</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore">
+      <created>1582636411777</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582636411777</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cp sliders.css and swiper.js from example">
+      <created>1582638551252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582638551252</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="map on all pages" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="cp sliders.css and swiper.js from example" />
+    <option name="LAST_COMMIT_MESSAGE" value="cp sliders.css and swiper.js from example" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="59" width="800" height="675" key="#Deployment" timestamp="1582627789231">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
     <state x="312" y="59" width="800" height="675" key="#Deployment/68.28.1298.740@68.28.1298.740" timestamp="1582627789231" />
+    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2" timestamp="1582638551145">
+      <screen x="68" y="28" width="1298" height="740" />
+    </state>
+    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2/68.28.1298.740@68.28.1298.740" timestamp="1582638551145" />
     <state x="314" y="177" width="796" height="439" key="EditFileWatcherDialog" timestamp="1582630327549">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
