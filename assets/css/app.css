@@ -32,4 +32,8 @@
   color: darkgrey;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 /*# sourceMappingURL=app.css.map */
