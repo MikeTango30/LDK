@@ -18,3 +18,15 @@
 .sticky + main {
   padding-top: 102px;
 }
+
+// icon hover
+.middle-nav {
+  a:hover {
+    .blue-icon::before {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

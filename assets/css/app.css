@@ -17,4 +17,11 @@
   padding-top: 102px;
 }
 
+.middle-nav a:hover .blue-icon::before {
+  color: #fff;
+}
+.middle-nav a:hover .blue-icon::before:hover {
+  color: #fff;
+}
+
 /*# sourceMappingURL=app.css.map */

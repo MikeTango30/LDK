@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cb9b277-c205-4cc8-87f5-a821afa90d01" name="Default Changelist" comment="map on all pages">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/stickyHeader.js" afterDir="false" />
+    <list default="true" id="0cb9b277-c205-4cc8-87f5-a821afa90d01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/_elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/_elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/veikla.html" beforeDir="false" afterPath="$PROJECT_DIR$/veikla.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582627587370</updated>
-      <workItem from="1582627588763" duration="9586000" />
+      <workItem from="1582627588763" duration="13001000" />
     </task>
     <task id="LOCAL-00001" summary="map on all pages">
       <created>1582636370199</created>
@@ -104,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582638551252</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sticky header">
+      <created>1582639693518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582639693518</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,21 +123,26 @@
     <MESSAGE value="map on all pages" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="cp sliders.css and swiper.js from example" />
-    <option name="LAST_COMMIT_MESSAGE" value="cp sliders.css and swiper.js from example" />
+    <MESSAGE value="sticky header" />
+    <option name="LAST_COMMIT_MESSAGE" value="sticky header" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="59" width="800" height="675" key="#Deployment" timestamp="1582627789231">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
     <state x="312" y="59" width="800" height="675" key="#Deployment/68.28.1298.740@68.28.1298.740" timestamp="1582627789231" />
-    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2" timestamp="1582638551145">
+    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2" timestamp="1582639693414">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
-    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2/68.28.1298.740@68.28.1298.740" timestamp="1582638551145" />
+    <state x="323" y="28" width="778" height="738" key="CommitChangelistDialog2/68.28.1298.740@68.28.1298.740" timestamp="1582639693414" />
     <state x="314" y="177" width="796" height="439" key="EditFileWatcherDialog" timestamp="1582630327549">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
     <state x="314" y="177" width="796" height="439" key="EditFileWatcherDialog/68.28.1298.740@68.28.1298.740" timestamp="1582630327549" />
+    <state x="312" y="134" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1582639698669">
+      <screen x="68" y="28" width="1298" height="740" />
+    </state>
+    <state x="312" y="134" width="800" height="526" key="Vcs.Push.Dialog.v2/68.28.1298.740@68.28.1298.740" timestamp="1582639698669" />
     <state x="614" y="120" width="196" height="551" key="ftp.server.browser" timestamp="1582627787707">
       <screen x="68" y="28" width="1298" height="740" />
     </state>
