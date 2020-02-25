@@ -31,8 +31,17 @@
   }
 }
 
+// icons in mision... statements
 .mission-vision {
   .blue-icon::before {
     color: #000;
   }
 }
+
+// footer icons
+.grey-icon {
+  &:hover::before {
+    color: darkgrey;
+  }
+}
+

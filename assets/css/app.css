@@ -28,4 +28,8 @@
   color: #000;
 }
 
+.grey-icon:hover::before {
+  color: darkgrey;
+}
+
 /*# sourceMappingURL=app.css.map */
