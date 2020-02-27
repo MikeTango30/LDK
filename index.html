@@ -3306,7 +3306,7 @@
     <div class="text-uppercase font-32 font-weight-bold text-center py-4">
         PARTNERIAI
     </div>
-    <div class="custom-container p-lg-5 p-0 py-3 d-flex">
+    <div class="custom-container container-end-swiper p-lg-5 p-0 py-3 d-flex">
         <div class="end-arrow-prev flaticon-left outer-arrow "></div>
         <!-- Swiper -->
         <div class="swiper-container end-swiper">
@@ -3405,7 +3405,7 @@
     </div>
 </section>
 <section class="bg-primary text-white">
-    <div class="custom-container py-2 d-flex px-lg-4 px-0 align-items-center font-18">
+    <div class="custom-container container-stripe-bottom py-2 d-flex align-items-center font-18">
         <div class="flex-grow-1">LDK veikla grindžiama PASITIKĖJIMU. Jei sudomino</div>
         <button class="btn btn-bright px-lg-4 px-1 ml-2 font-weight-bold" style="border-radius: 0;">Konsultuokitės
         </button>
@@ -3490,10 +3490,10 @@
     };
     var hasActive = function () {
         if ($(".middle-swiper li").hasClass("active")) {
-            console.log("has");
+            // console.log("has");
             $(".calendar-block").addClass("calendar-block-margin");
         } else {
-            console.log("removed");
+            // console.log("removed");
             $(".calendar-block").removeClass("calendar-block-margin");
         }
     };
@@ -3501,7 +3501,7 @@
 
         $(".end-swiper .swiper-slide").on('click', function () {
             let value = $(this).contents('div').text();
-            console.log(value)
+            // console.log(value)
             $("#modal .modal-body").html(value);
         });
 
@@ -3541,7 +3541,12 @@
 <script>
     var swiper2 = new Swiper('.end-swiper', {
         slidesPerView: 5,
-        spaceBetween: 10,
+        spaceBetween: 30,
+        loop: true,
+        delay: 5000,
+        autoplay: {
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.end-arrow-next',
             prevEl: '.end-arrow-prev',
@@ -3585,8 +3590,8 @@
         spaceBetween: 30,
         effect: 'fade',
         loop: true,
+        delay: 5000,
         autoplay: {
-            delay: 3000,
             disableOnInteraction: false,
         },
         pagination: {

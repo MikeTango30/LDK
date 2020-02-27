@@ -35,7 +35,18 @@ header, footer {
     font-size: 0.875rem; }
 
 .end-swiper .swiper-slide {
-  font-size: "OpenSans", sans-serif;
+  font-size: 0.75rem;
   padding: 0 1.75rem; }
+
+.container-end-swiper .p-lg-5 {
+  padding: 3rem 5.5rem !important; }
+
+.container-stripe-bottom {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+  @media (min-width: 992px) {
+    .container-stripe-bottom {
+      padding-left: 5.5rem;
+      padding-right: 5.5rem; } }
 
 /*# sourceMappingURL=app.css.map */

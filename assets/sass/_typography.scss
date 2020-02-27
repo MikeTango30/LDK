@@ -6,9 +6,11 @@ body {
 
 header, footer {
   font-size: $font-size__small;
+
   .footer-title {
     font-size: $font-size__medium;
   }
+
   .lang {
     .btn {
       font-size: $font-size__medium;
@@ -18,8 +20,23 @@ header, footer {
 
 .end-swiper {
   .swiper-slide {
-    font-size: $font-family__body;
+    font-size: $font-size__small;
     padding: 0 1.75rem;
+  }
+}
+
+.container-end-swiper {
+  .p-lg-5 {
+    padding: 3rem 5.5rem !important;
+  }
+}
+
+.container-stripe-bottom {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  @media (min-width: 992px) {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
   }
 }
 
