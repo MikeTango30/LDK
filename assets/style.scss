@@ -375,8 +375,9 @@ div.section div:nth-child(odd)
     color: white;
     height: 64vh;
     max-height: 700px;
-    min-height: 525px;
+    min-height: 650px;
     background-size: cover;
+    background-position: 100% 50%;
 
     &:before {
       content: "";
@@ -387,6 +388,7 @@ div.section div:nth-child(odd)
       height: 100%;
       filter: grayscale(100%);
       background-size: cover;
+      background-position: 100% 50%;
     }
   }
 
