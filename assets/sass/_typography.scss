@@ -1,0 +1,27 @@
+@import "variables";
+
+body {
+  font-family: $font-family__body;
+}
+
+header, footer {
+  font-size: $font-size__small;
+  .footer-title {
+    font-size: $font-size__medium;
+  }
+  .lang {
+    .btn {
+      font-size: $font-size__medium;
+    }
+  }
+}
+
+.end-swiper {
+  .swiper-slide {
+    font-size: $font-family__body;
+    padding: 0 1.75rem;
+  }
+}
+
+
+

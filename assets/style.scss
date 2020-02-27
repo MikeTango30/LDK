@@ -434,7 +434,7 @@ div.section div:nth-child(odd)
   }
 }
 header {
-  font-size: 14px !important;
+  //font-size: 14px !important;
   position: relative;
   z-index: 5000;
   .lang .active {
@@ -471,9 +471,9 @@ header {
     }
     li {
       cursor: pointer;
-      font-size: 14px !important;
+      //font-size: 14px !important;
       position: relative;
-      padding: 15px 50px;
+      padding: 17px 50px;
       border-radius: 0 !important;
       background-color: transparent !important;
       color: black !important;
@@ -613,7 +613,7 @@ html, body {
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  //font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -627,7 +627,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  //font-size: 18px;
   background: #fff;
 
   /* Center slide text vertically */
@@ -811,18 +811,22 @@ body {
 
 .slide-a {
   background-image: url("../assets/images/sukis1.jpg");
+  background-size: contain;
 }
 
 .slide-b {
   background-image: url("../assets/images/sukis2.jpg");
+  background-size: contain;
 }
 
 .slide-c {
   background-image: url("../assets/images/sukis3.jpg");
+  background-size: contain;
 }
 
 .slide-d {
   background-image: url("../assets/images/sukis4.jpg");
+  background-size: contain;
 }
 
 .unselectable {
