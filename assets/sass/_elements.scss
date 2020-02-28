@@ -51,6 +51,12 @@
   }
 }
 
+.activities {
+  div {
+    min-height: 150px;
+  }
+}
+
 .contact-card {
   min-height: 200px;
 }
@@ -60,6 +66,11 @@
   flex-direction: column;
   justify-content: center;
   min-height: 125px;
+}
+
+.member-section-stripe {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 // Disable Google Map bottom links, thanks SO

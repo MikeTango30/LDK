@@ -49,11 +49,17 @@ header, footer {
   margin-right: 1.85rem;
 }
 
-.contact-card {
+.contact-card, .activities-main-article {
   font-size: $font-size__small;
 
   .name {
     text-transform: uppercase;
+  }
+}
+
+.activities-main-article {
+  li {
+    margin: 1rem 0;
   }
 }
 
@@ -66,6 +72,12 @@ header, footer {
 .underline {
   text-decoration: underline;
 }
+
+.about-bottom.activities {
+  font-weight: 700;
+  font-size: 18px;
+}
+
 
 
 

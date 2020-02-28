@@ -27,6 +27,9 @@
 .about-bottom div {
   min-height: 200px; }
 
+.activities div {
+  min-height: 150px; }
+
 .contact-card {
   min-height: 200px; }
 
@@ -35,6 +38,10 @@
   flex-direction: column;
   justify-content: center;
   min-height: 125px; }
+
+.member-section-stripe {
+  padding-left: 5px;
+  padding-right: 5px; }
 
 a[href^="http://maps.google.com/maps"] {
   display: none !important; }
@@ -80,15 +87,22 @@ header, footer {
   margin-left: 1.85rem;
   margin-right: 1.85rem; }
 
-.contact-card {
+.contact-card, .activities-main-article {
   font-size: 0.75rem; }
-  .contact-card .name {
+  .contact-card .name, .activities-main-article .name {
     text-transform: uppercase; }
+
+.activities-main-article li {
+  margin: 1rem 0; }
 
 .member-section article {
   font-size: 0.75rem; }
 
 .underline {
   text-decoration: underline; }
+
+.about-bottom.activities {
+  font-weight: 700;
+  font-size: 18px; }
 
 /*# sourceMappingURL=app.css.map */
