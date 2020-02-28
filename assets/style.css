@@ -125,10 +125,8 @@
     height: 73px;
     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0); }
 
-.calendar-block-margin {
-  margin-bottom: 340px; }
-
 .calendar-block {
+  margin-bottom: 15px;
   transition: 0.1s linear !important; }
 
 .callendar-popup {

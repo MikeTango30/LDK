@@ -173,9 +173,10 @@ $theme-colors: (
   }
 }
 .calendar-block-margin{
-  margin-bottom: 340px;
+  //margin-bottom: 340px;
 }
 .calendar-block{
+  margin-bottom: 15px; //because of disabled line 176 calender nav hover style is cut, margin here is enough to show full hover style
   transition: 0.1s linear !important;
 }
 .callendar-popup{
