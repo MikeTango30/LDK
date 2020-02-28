@@ -1,6 +1,6 @@
-@import url(../node_modules/font-awesome/css/font-awesome.min.css);
-@import url(../node_modules/swiper/css/swiper.min.css);
-@import url(./flaticon/flaticon.css);
+@import url(../../node_modules/font-awesome/css/font-awesome.min.css);
+@import url(../../node_modules/swiper/css/swiper.min.css);
+@import url(../flaticon/flaticon.css);
 .link-unstyled {
   color: black;
   text-decoration: none; }
@@ -311,13 +311,13 @@ div.section div:nth-child(odd) {
       background-size: cover;
       background-position: 100% 50%; }
   .main-swiper .a:before {
-    background-image: url("./images/sukis1.jpg"); }
+    background-image: url("../images/sukis1.jpg"); }
   .main-swiper .b:before {
-    background-image: url("./images/sukis2.jpg"); }
+    background-image: url("../images/sukis2.jpg"); }
   .main-swiper .c:before {
-    background-image: url("./images/sukis3.jpg"); }
+    background-image: url("../images/sukis3.jpg"); }
   .main-swiper .d:before {
-    background-image: url("./images/sukis4.jpg"); }
+    background-image: url("../images/sukis4.jpg"); }
 
 .h-0 {
   height: 0;
@@ -8798,19 +8798,19 @@ body {
   font-family: Arial, sans-serif; }
 
 .slide-a {
-  background-image: url("../assets/images/sukis1.jpg");
+  background-image: url("../images/sukis1.jpg");
   background-size: contain; }
 
 .slide-b {
-  background-image: url("../assets/images/sukis2.jpg");
+  background-image: url("../images/sukis2.jpg");
   background-size: contain; }
 
 .slide-c {
-  background-image: url("../assets/images/sukis3.jpg");
+  background-image: url("../images/sukis3.jpg");
   background-size: contain; }
 
 .slide-d {
-  background-image: url("../assets/images/sukis4.jpg");
+  background-image: url("../images/sukis4.jpg");
   background-size: contain; }
 
 .unselectable {

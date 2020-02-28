@@ -24,6 +24,9 @@
 .btn {
   border-radius: 0; }
 
+.about-bottom div {
+  min-height: 200px; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -48,5 +51,12 @@ header, footer {
     .container-stripe-bottom {
       padding-left: 5.5rem;
       padding-right: 5.5rem; } }
+
+.mission-vision, .about-bottom {
+  font-size: 0.75rem; }
+
+.middle-block {
+  margin-left: 1.85rem;
+  margin-right: 1.85rem; }
 
 /*# sourceMappingURL=app.css.map */

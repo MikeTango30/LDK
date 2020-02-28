@@ -394,19 +394,19 @@ div.section div:nth-child(odd)
   }
 
   .a:before {
-    background-image: url("./images/sukis1.jpg");
+    background-image: url("../images/sukis1.jpg");
   }
 
   .b:before {
-    background-image: url("./images/sukis2.jpg");
+    background-image: url("../images/sukis2.jpg");
   }
 
   .c:before {
-    background-image: url("./images/sukis3.jpg");
+    background-image: url("../images/sukis3.jpg");
   }
 
   .d:before {
-    background-image: url("./images/sukis4.jpg");
+    background-image: url("../images/sukis4.jpg");
   }
 }
 .h-0{
@@ -712,10 +712,10 @@ body {
   color: black;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/font-awesome/css/font-awesome.min.css";
-@import "../node_modules/swiper/css/swiper.min.css";
-@import "./flaticon/flaticon.css";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../../node_modules/swiper/css/swiper.min.css";
+@import "../flaticon/flaticon.css";
 
 .member-section{
    .col-8, .col-4, .col-lg, .col-lg-8, .col-lg-4{
@@ -813,22 +813,22 @@ body {
 }
 
 .slide-a {
-  background-image: url("../assets/images/sukis1.jpg");
+  background-image: url("../images/sukis1.jpg");
   background-size: contain;
 }
 
 .slide-b {
-  background-image: url("../assets/images/sukis2.jpg");
+  background-image: url("../images/sukis2.jpg");
   background-size: contain;
 }
 
 .slide-c {
-  background-image: url("../assets/images/sukis3.jpg");
+  background-image: url("../images/sukis3.jpg");
   background-size: contain;
 }
 
 .slide-d {
-  background-image: url("../assets/images/sukis4.jpg");
+  background-image: url("../images/sukis4.jpg");
   background-size: contain;
 }
 
