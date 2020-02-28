@@ -55,6 +55,13 @@
   min-height: 200px;
 }
 
+.container-member-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 125px;
+}
+
 // Disable Google Map bottom links, thanks SO
 a[href^="http://maps.google.com/maps"]{display:none !important}
 a[href^="https://maps.google.com/maps"]{display:none !important}

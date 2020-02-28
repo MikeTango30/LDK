@@ -30,6 +30,12 @@
 .contact-card {
   min-height: 200px; }
 
+.container-member-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 125px; }
+
 a[href^="http://maps.google.com/maps"] {
   display: none !important; }
 
@@ -78,5 +84,11 @@ header, footer {
   font-size: 0.75rem; }
   .contact-card .name {
     text-transform: uppercase; }
+
+.member-section article {
+  font-size: 0.75rem; }
+
+.underline {
+  text-decoration: underline; }
 
 /*# sourceMappingURL=app.css.map */
