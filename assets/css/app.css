@@ -55,6 +55,11 @@ a[href^="https://maps.google.com/maps"] {
 .gmnoprint div {
   background: none !important; }
 
+.middle-swiper .year {
+  padding: 1rem .5rem; }
+.middle-swiper li {
+  padding: 1rem .2rem; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -68,6 +73,10 @@ header, footer {
 .end-swiper .swiper-slide {
   font-size: 0.75rem;
   padding: 0 1.75rem; }
+
+.middle-swiper {
+  font-size: 0.875rem;
+  font-weight: 400; }
 
 .container-end-swiper .p-lg-5 {
   padding: 3rem 5.5rem !important; }
