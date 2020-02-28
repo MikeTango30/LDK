@@ -27,6 +27,9 @@
 .about-bottom div {
   min-height: 200px; }
 
+.contact-card {
+  min-height: 200px; }
+
 a[href^="http://maps.google.com/maps"] {
   display: none !important; }
 
@@ -70,5 +73,10 @@ header, footer {
 .middle-block {
   margin-left: 1.85rem;
   margin-right: 1.85rem; }
+
+.contact-card {
+  font-size: 0.75rem; }
+  .contact-card .name {
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=app.css.map */

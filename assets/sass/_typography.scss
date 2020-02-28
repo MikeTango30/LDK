@@ -49,5 +49,13 @@ header, footer {
   margin-right: 1.85rem;
 }
 
+.contact-card {
+  font-size: $font-size__small;
+
+  .name {
+    text-transform: uppercase;
+  }
+}
+
 
 
