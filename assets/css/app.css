@@ -1,6 +1,14 @@
 #map {
   height: 250px; }
 
+@media (min-width: 1200px) {
+  .container-wider {
+    max-width: 2000px; } }
+
+@media (min-width: 1200px) {
+  .middle-nav {
+    max-width: 1970px; } }
+
 .circle-solid {
   height: 5px;
   width: 5px; }
@@ -74,6 +82,11 @@ a[href^="https://maps.google.com/maps"] {
 .contacts-managers .contact-info div div {
   margin: 0 1.5rem; }
 
+.modal-content {
+  border-radius: 0;
+  width: 540px;
+  height: 267px; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -132,5 +145,13 @@ header, footer {
 .about-bottom.activities {
   font-weight: 700;
   font-size: 18px; }
+
+.modal-content {
+  font-size: 0.75rem; }
+  .modal-content .modal-body {
+    margin: 4rem 3.5rem;
+    padding: 0; }
+    .modal-content .modal-body .row {
+      margin: .5rem 0; }
 
 /*# sourceMappingURL=app.css.map */

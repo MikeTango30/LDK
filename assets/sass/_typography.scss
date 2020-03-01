@@ -90,6 +90,17 @@ header, footer {
   font-size: 18px;
 }
 
+.modal-content {
+  font-size: $font-size__small;
+  .modal-body {
+    margin: 4rem 3.5rem;
+    padding: 0;
+    .row {
+      margin: .5rem 0;
+    }
+  }
+}
+
 
 
 

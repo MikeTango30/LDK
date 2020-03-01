@@ -8,6 +8,18 @@
   height: 250px;
 }
 
+.container-wider {
+  @media (min-width: 1200px) {
+    max-width: 2000px; //for ultra wide screen
+  }
+}
+
+.middle-nav {
+  @media (min-width: 1200px) {
+    max-width: 1970px; //for ultra wide screen
+  }
+}
+
 // map marker
 .circle-solid {
   height: 5px;
@@ -130,6 +142,12 @@ a[href^="https://maps.google.com/maps"] {
   .contact-info div div {
     margin: 0 1.5rem;
   }
+}
+
+.modal-content {
+  border-radius: 0;
+  width: 540px;
+  height: 267px;
 }
 
 
