@@ -45,6 +45,13 @@ header, footer {
   }
 }
 
+.contacts-managers {
+  font-size: $font-size__small;
+  .font-weight-bold {
+    font-size: $font-size__medium;
+  }
+}
+
 .mission-vision, .about-bottom {
   font-size: $font-size__small;
 }

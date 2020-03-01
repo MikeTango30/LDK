@@ -20,6 +20,7 @@
   top: 0;
   width: 100%
 }
+
 .sticky + main {
   padding-top: 102px;
 }
@@ -29,6 +30,7 @@
   a:hover {
     .blue-icon::before {
       color: #fff;
+
       &:hover {
         color: #fff;
       }
@@ -79,22 +81,54 @@
 }
 
 // Disable Google Map bottom links, thanks SO
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
+a[href^="http://maps.google.com/maps"] {
+  display: none !important
+}
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important
+}
 
 .gmnoprint a, .gmnoprint span, .gm-style-cc {
-  display:none;
+  display: none;
 }
+
 .gmnoprint div {
-  background:none !important;
+  background: none !important;
 }
 
 .middle-swiper {
   .year {
     padding: 1rem .5rem;
   }
+
   li {
     padding: 1rem .2rem;
+  }
+}
+
+.contacts-managers {
+  @media (min-width: 992px) {
+    .contacts-managers-left {
+      padding-right: 0;
+    }
+    .contacts-managers-right {
+      padding-left: 0;
+    }
+  }
+
+  .img-fluid {
+    max-width: 200px;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .contact-info div div {
+    margin: 0 1.5rem;
   }
 }
 

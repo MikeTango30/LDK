@@ -60,6 +60,20 @@ a[href^="https://maps.google.com/maps"] {
 .middle-swiper li {
   padding: 1rem .2rem; }
 
+@media (min-width: 992px) {
+  .contacts-managers .contacts-managers-left {
+    padding-right: 0; }
+  .contacts-managers .contacts-managers-right {
+    padding-left: 0; } }
+.contacts-managers .img-fluid {
+  max-width: 200px; }
+.contacts-managers img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover; }
+.contacts-managers .contact-info div div {
+  margin: 0 1.5rem; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -88,6 +102,11 @@ header, footer {
     .container-stripe-bottom {
       padding-left: 5.5rem;
       padding-right: 5.5rem; } }
+
+.contacts-managers {
+  font-size: 0.75rem; }
+  .contacts-managers .font-weight-bold {
+    font-size: 0.875rem; }
 
 .mission-vision, .about-bottom {
   font-size: 0.75rem; }
