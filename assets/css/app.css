@@ -116,6 +116,12 @@ a[href^="https://maps.google.com/maps"] {
       background-color: #0d6aa5;
       padding: 0 2.5rem; }
 
+.consult-activities {
+  margin: 0 -.3rem; }
+
+.consult-contacts {
+  margin: 0 .7rem; }
+
 .color-red {
   color: #ff1111; }
 
