@@ -36,7 +36,8 @@
   min-height: 200px; }
 
 .activities div {
-  min-height: 150px; }
+  min-height: 150px;
+  margin: 0 15px; }
 
 .contact-card {
   min-height: 200px; }
@@ -68,11 +69,6 @@ a[href^="https://maps.google.com/maps"] {
 .middle-swiper li {
   padding: 1rem .2rem; }
 
-@media (min-width: 992px) {
-  .contacts-managers .contacts-managers-left {
-    padding-right: 0; }
-  .contacts-managers .contacts-managers-right {
-    padding-left: 0; } }
 .contacts-managers .img-fluid {
   max-width: 200px; }
 .contacts-managers img {
@@ -81,6 +77,9 @@ a[href^="https://maps.google.com/maps"] {
   object-fit: cover; }
 .contacts-managers .contact-info div div {
   margin: 0 1.5rem; }
+
+.contacts-administration:first-child, .activities:first-child {
+  margin-bottom: 30px; }
 
 .modal-content {
   border-radius: 0;
@@ -116,14 +115,16 @@ a[href^="https://maps.google.com/maps"] {
       background-color: #0d6aa5;
       padding: 0 2.5rem; }
 
-.consult-activities {
-  margin: 0 -.3rem; }
-
-.consult-contacts {
-  margin: 0 .7rem; }
-
 .color-red {
   color: #ff1111; }
+
+.container-managers {
+  padding-bottom: 3.125rem; }
+  .container-managers .managers-title {
+    height: 125px; }
+
+.flip-horizontally {
+  transform: scaleX(-1); }
 
 body {
   font-family: "OpenSans", sans-serif; }

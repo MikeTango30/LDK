@@ -73,6 +73,7 @@
 .activities {
   div {
     min-height: 150px;
+    margin: 0 15px;
   }
 }
 
@@ -120,15 +121,6 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .contacts-managers {
-  @media (min-width: 992px) {
-    .contacts-managers-left {
-      padding-right: 0;
-    }
-    .contacts-managers-right {
-      padding-left: 0;
-    }
-  }
-
   .img-fluid {
     max-width: 200px;
   }
@@ -142,6 +134,10 @@ a[href^="https://maps.google.com/maps"] {
   .contact-info div div {
     margin: 0 1.5rem;
   }
+}
+
+.contacts-administration:first-child, .activities:first-child {
+  margin-bottom: 30px;
 }
 
 .modal-content {
@@ -190,15 +186,19 @@ a[href^="https://maps.google.com/maps"] {
   }
 }
 
-.consult-activities {
-  margin: 0 -.3rem;
-}
-.consult-contacts {
-  margin: 0 .7rem;
-}
-
 .color-red {
   color: #ff1111;
+}
+
+.container-managers {
+  padding-bottom: 3.125rem;
+  .managers-title {
+    height: 125px;
+  }
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
 }
 
 
