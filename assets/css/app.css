@@ -86,6 +86,38 @@ a[href^="https://maps.google.com/maps"] {
   border-radius: 0;
   width: 540px;
   height: 267px; }
+  .modal-content .modal-body-partners {
+    margin: 4rem 3.5rem;
+    padding: 0; }
+    .modal-content .modal-body-partners .row {
+      margin: .5rem 0; }
+
+.modal-content-contact-us {
+  width: 507px;
+  height: 370px; }
+  .modal-content-contact-us .modal-body-contact-us {
+    margin: 2.25rem;
+    padding: 0; }
+    .modal-content-contact-us .modal-body-contact-us .form-group:first-child {
+      margin-top: .5rem; }
+    .modal-content-contact-us .modal-body-contact-us .form-group {
+      margin-bottom: .3rem; }
+    .modal-content-contact-us .modal-body-contact-us label {
+      margin-bottom: .3rem; }
+    .modal-content-contact-us .modal-body-contact-us input {
+      height: 1.25rem; }
+    .modal-content-contact-us .modal-body-contact-us input, .modal-content-contact-us .modal-body-contact-us textarea {
+      border-radius: 0; }
+    .modal-content-contact-us .modal-body-contact-us textarea {
+      min-height: 115px; }
+    .modal-content-contact-us .modal-body-contact-us .btn-contact-us {
+      margin-top: .35rem;
+      height: 1.25rem;
+      background-color: #0d6aa5;
+      padding: 0 2.5rem; }
+
+.color-red {
+  color: #ff1111; }
 
 body {
   font-family: "OpenSans", sans-serif; }
@@ -146,12 +178,18 @@ header, footer {
   font-weight: 700;
   font-size: 18px; }
 
-.modal-content {
+.modal-content, .btn-contact-us {
   font-size: 0.75rem; }
-  .modal-content .modal-body {
-    margin: 4rem 3.5rem;
-    padding: 0; }
-    .modal-content .modal-body .row {
-      margin: .5rem 0; }
+
+.modal-body-contact-us label {
+  font-weight: 700; }
+
+.contact-us-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem; }
+
+.btn-contact-us {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=app.css.map */

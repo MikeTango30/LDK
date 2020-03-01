@@ -90,15 +90,24 @@ header, footer {
   font-size: 18px;
 }
 
-.modal-content {
+.modal-content, .btn-contact-us {
   font-size: $font-size__small;
-  .modal-body {
-    margin: 4rem 3.5rem;
-    padding: 0;
-    .row {
-      margin: .5rem 0;
-    }
+}
+
+.modal-body-contact-us {
+  label {
+    font-weight: 700;
   }
+}
+
+.contact-us-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btn-contact-us {
+  text-transform: uppercase;
 }
 
 

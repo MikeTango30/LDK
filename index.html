@@ -3374,7 +3374,7 @@
 <section class="bg-primary text-white">
   <div class="container container-stripe-bottom py-2 d-flex align-items-center font-18">
     <div class="flex-grow-1">LDK veikla grindžiama PASITIKĖJIMU. Jei sudomino</div>
-    <button class="btn btn-bright px-lg-4 px-1 ml-2 font-weight-bold" style="border-radius: 0;">Konsultuokitės
+    <button class="btn btn-bright px-lg-4 px-1 ml-2 font-weight-bold" data-toggle="modal" data-target="#modalContactUs" style="border-radius: 0;">Konsultuokitės
     </button>
   </div>
 </section>
@@ -3429,18 +3429,46 @@
     </div>
   </div>
 </footer>
-<!-- Modal -->
+<!-- Modals -->
+  <!--Partners-->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
      style="z-index: 6000">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content ">
-      <div class="modal-body">
+      <div class="modal-body modal-body-partners">
         2018 m. gegužės mėn. LDK ir Lietuvos mokslų akademija pasirašė bendradarbiavimo sutartį,
         kuria siekiama abipusiai prasmingo ir visuomenei naudingo bendradarbiavimo.
       </div>
     </div>
   </div>
 </div>
+  <!--Contact us-->
+<div class="modal fade" id="modalContactUs" tabindex="-1" role="dialog" aria-labelledby="modalContactUs" aria-hidden="true"
+     style="z-index: 6000">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content modal-content-contact-us">
+      <div class="modal-body modal-body-contact-us">
+        <span class="text-secondary contact-us-title">Susisiekite su mumis</span>
+        <form>
+          <div class="form-group">
+            <label for="inputName">Vardas Pavardė<span class="color-red">*</span></label>
+            <input type="text" class="form-control" id="inputName" aria-describedby="name" required>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email<span class="color-red">*</span></label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="email" required>
+          </div>
+          <div class="form-group">
+            <label for="inputMsg">Žinutė<span class="color-red">*</span></label>
+            <textarea type="text" class="form-control" id="inputMsg" aria-describedby="message" required></textarea>
+          </div>
+          <button type="submit" class="btn text-white btn-contact-us">Siųsti</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modals end-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
