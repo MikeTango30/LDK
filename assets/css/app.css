@@ -1,6 +1,9 @@
 #map {
   height: 250px; }
 
+.container-fluid.container-wider {
+  padding: 0; }
+
 @media (min-width: 1200px) {
   .container-wider {
     max-width: 2000px; } }
@@ -125,6 +128,26 @@ a[href^="https://maps.google.com/maps"] {
 
 .flip-horizontally {
   transform: scaleX(-1); }
+
+.ls-bottom-nav-wrapper {
+  text-align: left;
+  width: 100%;
+  bottom: 1.125rem; }
+  @media (min-width: 576px) {
+    .ls-bottom-nav-wrapper {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .ls-bottom-nav-wrapper {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .ls-bottom-nav-wrapper {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .ls-bottom-nav-wrapper {
+      max-width: 1140px; } }
+
+.ls-bottom-slidebuttons {
+  bottom: 1.125rem; }
 
 body {
   font-family: "OpenSans", sans-serif; }
