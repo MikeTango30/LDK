@@ -356,6 +356,8 @@ header {
       color: white; }
     header nav .active:after, header nav .active:before {
       border: 0 !important; }
+  header nav:hover .black-icon::before {
+    color: white; }
   header nav a {
     text-decoration: none !important; }
     header nav a:after, header nav a:before {

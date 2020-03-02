@@ -6,11 +6,7 @@
 
 @media (min-width: 1200px) {
   .container-wider {
-    max-width: 2000px; } }
-
-@media (min-width: 1200px) {
-  .middle-nav {
-    max-width: 1970px; } }
+    max-width: 1700px; } }
 
 .circle-solid {
   height: 5px;
@@ -131,8 +127,7 @@ a[href^="https://maps.google.com/maps"] {
 
 .ls-bottom-nav-wrapper {
   text-align: left;
-  width: 100%;
-  bottom: 1.125rem; }
+  width: 100%; }
   @media (min-width: 576px) {
     .ls-bottom-nav-wrapper {
       max-width: 540px; } }
@@ -149,6 +144,36 @@ a[href^="https://maps.google.com/maps"] {
 .ls-bottom-slidebuttons {
   bottom: 1.125rem; }
 
+@media (max-width: 1024px) {
+  #layerslider {
+    height: 580px !important; }
+
+  .ls-bottom-slidebuttons {
+    bottom: 1rem !important; } }
+@media (max-width: 992px) {
+  #layerslider {
+    height: 450px !important; }
+    #layerslider #ls-text1, #layerslider #ls-text2, #layerslider #ls-text3, #layerslider #ls-text4 {
+      font-size: 1.25rem !important; }
+
+  .ls-bottom-slidebuttons {
+    bottom: 0.75rem !important; } }
+@media (max-width: 768px) {
+  #layerslider {
+    height: 430px !important; }
+    #layerslider #ls-text1, #layerslider #ls-text2, #layerslider #ls-text3, #layerslider #ls-text4 {
+      font-size: 1rem !important; }
+
+  .ls-bottom-slidebuttons {
+    bottom: 0.5rem !important; } }
+@media (max-width: 576px) {
+  #layerslider {
+    height: 270px !important; }
+    #layerslider #ls-text1, #layerslider #ls-text2, #layerslider #ls-text3, #layerslider #ls-text4 {
+      font-size: 0.75rem !important; }
+
+  .ls-bottom-slidebuttons {
+    bottom: 0 !important; } }
 body {
   font-family: "OpenSans", sans-serif; }
 

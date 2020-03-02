@@ -464,6 +464,13 @@ header {
         border: 0!important;
       }
     }
+    &:hover {
+      .black-icon {
+        &::before {
+          color: white;
+        }
+      }
+    }
 
     a{
       text-decoration: none!important;
