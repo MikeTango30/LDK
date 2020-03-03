@@ -232,7 +232,8 @@ header, footer {
 .contact-card, .activities-main-article {
   font-size: 0.75rem; }
   .contact-card .name, .activities-main-article .name {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 800; }
 
 .activities-main-article li {
   margin: 1rem 0; }
