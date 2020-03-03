@@ -439,7 +439,8 @@ div.section div:nth-child(odd)
 header {
   //font-size: 14px !important;
   position: relative;
-  z-index: 5000;
+  //z-index: 5000;
+  z-index: 1000;
   .lang .active {
     background: $primary !important;
     color: white !important;
@@ -464,19 +465,22 @@ header {
         border: 0!important;
       }
     }
-    &:hover {
-      .black-icon {
-        &::before {
-          color: white;
-        }
-      }
-    }
 
     a{
       text-decoration: none!important;
       &:after, &:before {
         border-left: 0;
         border-right: 0;
+      }
+    }
+
+    ul a:first-child li {
+      &:hover {
+        .black-icon {
+          &::before {
+            color: white;
+          }
+        }
       }
     }
     li {
@@ -665,10 +669,23 @@ body {
     color: white !important;
   }
 }
-.hover-color-black {
+
+.hover-bg-primary {
   &:hover {
-    color: black !important;
+    background-color: $primary!important;
   }
+
+  .hover-color-black {
+    &:hover {
+      color: black !important;
+    }
+}
+
+.hover-bg-secondary {
+  &:hover {
+    background-color: $secondary!important;
+  }
+}
 }
 
 .invite-btn {

@@ -419,6 +419,9 @@
      style="z-index: 6000">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content modal-content-committee">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&#x2715;</span>
+      </button>
       <div class="modal-body modal-body-committee">
 
       </div>
@@ -444,8 +447,7 @@
 <script>
     $(function () {
         $(".activity").on('click', function () {
-            let value = $(this).contents('div')[0].innerHTML;
-            console.log(value);
+            let value = $(this).contents('div')[0].innerHTML;;
             $("#modal .modal-body").html(value);
         });
     });

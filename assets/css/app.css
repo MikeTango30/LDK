@@ -191,6 +191,15 @@ a[href^="https://maps.google.com/maps"] {
 
   .ls-bottom-slidebuttons {
     bottom: 0 !important; } }
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
+
+.ls-bg, .ls-curtiles img, .ls-nexttile img {
+  object-fit: cover;
+  object-position: center; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -240,7 +249,8 @@ header, footer {
   font-size: 0.75rem; }
   .contact-card .name, .activities-main-article .name {
     text-transform: uppercase;
-    font-weight: 800; }
+    font-size: 0.875rem;
+    font-weight: 700; }
 
 .activities-main-article li {
   margin: 1rem 0; }

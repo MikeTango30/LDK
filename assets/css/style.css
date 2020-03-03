@@ -342,7 +342,7 @@ div.section div:nth-child(odd) {
 
 header {
   position: relative;
-  z-index: 5000; }
+  z-index: 1000; }
   header .lang .active {
     background: #20947e !important;
     color: white !important; }
@@ -356,13 +356,13 @@ header {
       color: white; }
     header nav .active:after, header nav .active:before {
       border: 0 !important; }
-  header nav:hover .black-icon::before {
-    color: white; }
   header nav a {
     text-decoration: none !important; }
     header nav a:after, header nav a:before {
       border-left: 0;
       border-right: 0; }
+  header nav ul a:first-child li:hover .black-icon::before {
+    color: white; }
   header nav li {
     cursor: pointer;
     position: relative;
@@ -499,8 +499,12 @@ body {
 .hover-color-white:hover {
   color: white !important; }
 
-.hover-color-black:hover {
+.hover-bg-primary:hover {
+  background-color: #20947e !important; }
+.hover-bg-primary .hover-color-black:hover {
   color: black !important; }
+.hover-bg-primary .hover-bg-secondary:hover {
+  background-color: #0d6aa5 !important; }
 
 .invite-btn {
   background-color: darkgrey;

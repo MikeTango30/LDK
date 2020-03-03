@@ -305,4 +305,14 @@ a[href^="https://maps.google.com/maps"] {
   }
 }
 
+.close {
+  position: absolute;
+  top:  1rem;
+  right: 1rem;
+}
+
+.ls-bg, .ls-curtiles img, .ls-nexttile img {
+  object-fit: cover;
+  object-position: center;
+}
 
