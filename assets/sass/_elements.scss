@@ -3,6 +3,12 @@
   height: 250px;
 }
 
+@media (max-width: 576px) {
+  .overflow-hidden-phone {
+    overflow-x: hidden;
+  }
+}
+
 .container-fluid.container-wider {
   padding: 0;
 }

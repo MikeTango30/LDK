@@ -37,8 +37,12 @@ header, footer {
 }
 
 .container-stripe-bottom {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  @media (min-width: 576px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
   @media (min-width: 992px) {
     padding-left: 5.5rem;
     padding-right: 5.5rem;

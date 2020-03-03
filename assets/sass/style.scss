@@ -1112,3 +1112,13 @@ h4 {
   }
 }
 
+@media (max-width: 350px){
+  .middle-nav{
+    li{
+      div{
+        font-size: 9px!important;
+      }
+    }
+  }
+}
+
