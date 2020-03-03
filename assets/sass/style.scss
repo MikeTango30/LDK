@@ -672,10 +672,11 @@ body {
 
 .hover-bg-primary {
   &:hover {
-    background-color: $primary!important;
+    background-color: $primary !important;
   }
+}
 
-  .hover-color-black {
+.hover-color-black {
     &:hover {
       color: black !important;
     }
@@ -686,7 +687,7 @@ body {
     background-color: $secondary!important;
   }
 }
-}
+
 
 .invite-btn {
   background-color: darkgrey;

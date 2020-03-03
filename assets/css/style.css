@@ -501,9 +501,11 @@ body {
 
 .hover-bg-primary:hover {
   background-color: #20947e !important; }
-.hover-bg-primary .hover-color-black:hover {
+
+.hover-color-black:hover {
   color: black !important; }
-.hover-bg-primary .hover-bg-secondary:hover {
+
+.hover-bg-secondary:hover {
   background-color: #0d6aa5 !important; }
 
 .invite-btn {

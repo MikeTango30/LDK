@@ -393,6 +393,9 @@
      style="z-index: 6000">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content modal-content-contact-us">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&#x2715;</span>
+      </button>
       <div class="modal-body modal-body-contact-us">
         <span class="text-secondary contact-us-title">Susisiekite su mumis</span>
         <form>
@@ -447,105 +450,9 @@
 <script>
     $(function () {
         $(".activity").on('click', function () {
-            let value = $(this).contents('div')[0].innerHTML;;
+            let value = $(this).contents('div')[0].innerHTML;
             $("#modal .modal-body").html(value);
         });
-    });
-</script>
-<script>
-    var changePopUpSideIfNeeded = function (e) {
-        if (e.pageX / $(window).width() > 0.48) {
-            $(".calendar").addClass("margin-left-701");
-            $(".callendar-popup").addClass("float-right");
-            $(".calendar-wrapper").addClass("float-right");
-        } else if ($(".calendar").hasClass("margin-left-701")) {
-            $(".calendar").removeClass("margin-left-701");
-            $(".callendar-popup").removeClass("float-right");
-            $(".calendar-wrapper").removeClass("float-right");
-        }
-    };
-    $(function () {
-
-        $(".calendar-day-active").on('click', function (e) {
-            if ($(".callendar-popup").hasClass("d-none")) {
-                $(".callendar-popup").removeClass("d-none");
-            } else {
-                $(".callendar-popup").addClass("d-none")
-            }
-            $(".calendar").css({
-                height: '230px',
-                width: '900px',
-            });
-            changePopUpSideIfNeeded(e);
-        });
-        $(".middle-swiper li").mouseenter(function (e) {
-            $(this).siblings().removeClass("active");
-            $(".callendar-popup").addClass("d-none");
-            $(".calendar").css({
-                height: 'auto',
-            });
-            changePopUpSideIfNeeded(e);
-        });
-        $(".middle-swiper li").mouseleave(function (e) {
-            $(this).removeClass("active");
-        });
-    });
-</script>
-<script>
-    var swiper2 = new Swiper('.end-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-            nextEl: '.end-arrow-next',
-            prevEl: '.end-arrow-prev',
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 30
-            },
-            700: {
-                slidesPerView: 2,
-                spaceBetween: 15
-            }
-        }
-    });
-</script>
-<!-- Initialize Swiper -->
-<script>
-    var swiper1 = new Swiper('.middle-swiper', {
-        centeredSlides: true,
-        slidesPerView: 1,
-        initialSlide: 1,
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.middle-arrow-next',
-            prevEl: '.middle-arrow-prev',
-        },
-    });
-</script>
-<script>
-    var swiper = new Swiper('.main-swiper', {
-        spaceBetween: 30,
-        effect: 'fade',
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        }
     });
 </script>
 </body>
