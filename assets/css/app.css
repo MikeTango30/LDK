@@ -9,7 +9,7 @@
 
 @media (min-width: 1200px) {
   .container-wider {
-    max-width: 1700px; } }
+    max-width: 1920px; } }
 
 .circle-solid {
   height: 5px;
@@ -38,7 +38,7 @@
   min-height: 200px; }
 
 .activities div {
-  min-height: 150px;
+  min-height: 85px;
   margin: 0 15px; }
 
 .contact-card {
@@ -69,7 +69,7 @@ a[href^="https://maps.google.com/maps"] {
 .middle-swiper .year {
   padding: 1rem .5rem; }
 .middle-swiper li {
-  padding: 1rem .2rem; }
+  padding: 1rem .2rem 0; }
 
 .contacts-managers .img-fluid {
   max-width: 200px; }
@@ -134,11 +134,6 @@ a[href^="https://maps.google.com/maps"] {
 .color-red {
   color: #ff1111; }
 
-.container-managers {
-  padding-bottom: 3.125rem; }
-  .container-managers .managers-title {
-    height: 125px; }
-
 .flip-horizontally {
   transform: scaleX(-1); }
 
@@ -200,8 +195,36 @@ a[href^="https://maps.google.com/maps"] {
   object-fit: cover;
   object-position: center; }
 
+.email {
+  color: #212529;
+  text-decoration: none; }
+  .email:hover {
+    color: #212529;
+    text-decoration: none; }
+
+.email-footer {
+  color: darkgray; }
+  .email-footer:hover {
+    color: darkgray; }
+
+.title-padding {
+  padding: 1.75rem 0; }
+
+.section-padding {
+  padding: 2.25rem 0; }
+
+.section-padding-bottom {
+  padding-bottom: 2.25rem; }
+
+.menu-item {
+  padding-right: .5rem; }
+
 body {
   font-family: "OpenSans", sans-serif; }
+
+.btn-member {
+  width: 110px;
+  font-size: 0.75rem; }
 
 header, footer {
   font-size: 0.75rem; }
@@ -263,7 +286,7 @@ header, footer {
 
 .about-bottom.activities {
   font-weight: 700;
-  font-size: 18px; }
+  font-size: 14px; }
 
 .modal-content, .btn-contact-us {
   font-size: 0.75rem; }
@@ -278,5 +301,21 @@ header, footer {
 
 .btn-contact-us {
   text-transform: uppercase; }
+
+nav {
+  text-transform: uppercase; }
+
+.consult-stripe {
+  font-size: 0.875rem; }
+  .consult-stripe button {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase; }
+
+.title-inner {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600; }
 
 /*# sourceMappingURL=app.css.map */

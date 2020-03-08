@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/app.css">
   <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+
   <script type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS-1L-M-VclQy94meAPmeTJQplqaVkfZM"></script>
 </head>
@@ -42,12 +43,14 @@
         <text>(+370 5) 2496 448</text>
       </div>
       <div>
-        <i class="flaticon-email grey-icon"></i>
-        <text>info@darbdaviai.org</text>
+        <a href="mailto:info@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+        <a class="email" href="mailto:info@darbdaviai.org"><text>info@darbdaviai.org</text></a>
       </div>
     </div>
     <div class="mt-3 mt-lg-0">
-      <i class="fa fa-facebook-official fa-3x text-secondary pl-4 fb-icon"></i>
+      <a href="https://www.facebook.com/darbdaviai/" target="_blank">
+        <i class="fa fa-facebook-official fa-3x text-secondary pl-4 fb-icon"></i>
+      </a>
     </div>
   </div>
   <nav class="col-12 mt-3 p-0 border-top shadow" style="height: 51px">
@@ -63,16 +66,16 @@
           <span>Apie LDK</span>
           <ul class="list-unstyled bg-dark position-absolute">
             <a href="./about.html">
-              <li class="text-white bg-dark pseudo-border-0 active">Apie mus</li>
+              <li class="text-white bg-dark pseudo-border-0 active menu-item">Apie mus</li>
             </a>
             <a href="">
-              <li class="text-white bg-dark pseudo-border-0">Valdymas</li>
+              <li class="text-white bg-dark pseudo-border-0 menu-item">Valdymas</li>
             </a>
             <a href="veikla.html">
-              <li class="text-white bg-dark pseudo-border-0 ">Veikla</li>
+              <li class="text-white bg-dark pseudo-border-0 menu-item">Veikla</li>
             </a>
             <a href="">
-              <li class="text-white bg-dark pseudo-border-0">Projektai</li>
+              <li class="text-white bg-dark pseudo-border-0 menu-item">Projektai</li>
             </a>
           </ul>
         </li>
@@ -81,7 +84,7 @@
         </a>
       </ul>
       <a href="./member.html">
-        <button class="btn btn-secondary">
+        <button class="btn btn-secondary btn-member">
           Tapkite nariu
         </button>
       </a>
@@ -89,12 +92,12 @@
   </nav>
 </header>
 
-<section class="bg-light pb-lg-5 pb-0 ">
-  <div class="pb-5 pt-2">
+<section class="bg-light">
+  <div>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
-          <div class="text-uppercase font-32 font-weight-bold text-center py-5 mt-3">
+          <div class="title-inner title-padding">
             APIE MUS
           </div>
           <div class="row font-14">
@@ -110,7 +113,7 @@
               vadinosi Lietuvos verslo darbdavių konfederacija.
             </article>
           </div>
-          <div class="row py-4 mission-vision">
+          <div class="row section-padding mission-vision">
             <div
                 class="col-lg row border-secondary bg-lighter flex-column p-3 align-items-center justify-content-start mx-lg-0 mx-auto">
               <i class="flaticon-start-up blue-icon"></i>
@@ -132,7 +135,7 @@
             <div
                 class="col-lg row border-secondary bg-lighter flex-column p-3 align-items-center justify-content-start mx-lg-0 mx-auto">
               <i class="flaticon-seo-and-web blue-icon"></i>
-              <span class="font-weight-bold font-18">Vertybes</span>
+              <span class="font-weight-bold font-18">Vertybės</span>
               <div class="mt-4 text-justify">
                 LDK vertybės remiasi verslo etikos ir socialinės atsakomybės principais: skaidrumu ir
                 objektyvumu, sąžiningumu ir pasitikėjimu, lygiateisiškumu, savanoryste, interesų derinimu,
@@ -143,29 +146,29 @@
         </div>
       </div>
     </div>
-    <article class="py-5 px-lg-4 px-0 bg-lighter mt-4">
+    <article class="px-lg-4 px-0 bg-lighter section-padding-bottom">
       <div
-          class="text-uppercase font-24 font-weight-bold text-center pb-lg-4 pb-3 text-lightgray col-lg-4 col-12 mx-auto">
+          class="title-inner title-padding col-lg-4 col-12 mx-auto">
         Tikslai
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="row about-bottom justify-content-center">
-              <div class="col-lg d-flex text-center align-items-center mt-2">
+              <div class="col-lg d-flex text-center align-items-center">
                 <p class="p-2">
                   Sutelkti Lietuvos SVV verslo darbdavius jų teisėtiems interesams išreikšti, atstovauti ir
                   užtikrinti
                 </p>
               </div>
-              <div class="col-lg d-flex text-center middle-block justify-content-center align-items-center mt-2">
+              <div class="col-lg d-flex text-center middle-block justify-content-center align-items-center">
                 <p class="p-2">
                   Skatinti SVV verslo įmonių bendradarbiavimą su švietimo, studijų ir mokslo institucijomis ir
                   prisidėti prie švietimo ir studijų sistemos efektyvumo didinimo rengiant darbo rinkos poreikius
                   atitinkančius specialistus
                 </p>
               </div>
-              <div class="col-lg d-flex text-center justify-content-center align-items-center mt-2">
+              <div class="col-lg d-flex text-center justify-content-center align-items-center">
                 <p class="p-2">
                   Inicijuoti SVV verslo įmonių steigimą ir plėtrą visuose Lietuvos regionuose ir teikti joms
                   informacinę ir konsultacinę pagalbą rūpimais klausimais
@@ -176,9 +179,9 @@
         </div>
       </div>
     </article>
-    <article class="py-4 px-lg-4 px-0 mt-4">
+    <article class="px-lg-4 px-0 section-padding-bottom">
       <div
-          class="text-uppercase font-24 font-weight-bold text-center pb-5 text-lightgray col-lg-4 col-12 mx-auto">
+          class="title-inner title-padding col-lg-4 col-12 mx-auto">
         Dokumentai
       </div>
       <div class="container">
@@ -187,21 +190,21 @@
             <div class="row mx-0 justify-content-center">
               <div
                   class="hover-color-white pointer bg-lighter hover-bg-primary border-primary-np text-primary pr-3 mr-lg-5 py-2 col-lg row  justify-content-center align-items-center">
-                <i class="flaticon-document mr-1"></i>LDK įstatai
+                <i class="flaticon-document mr-1"></i>LDK Įstatai
               </div>
               <div class="hover-color-white pointer bg-lighter hover-bg-primary  border-primary-np text-primary py-2 col-lg
                      row justify-content-center align-items-center mt-lg-0 mt-3">
-                <i class="flaticon-document mr-1"></i>LDK viešųjų pirkimų organizavimo taisyklės
+                <i class="flaticon-document mr-1"></i>LDK Viešųjų pirkimų organizavimo taisyklės
               </div>
             </div>
             <div class="row mt-4 mx-0 justify-content-center">
               <div
                   class="hover-color-white pointer bg-lighter hover-bg-secondary border-secondary-np text-secondary pr-3 mr-lg-5 py-2 col-lg row  justify-content-center align-items-center">
-                <i class="flaticon-document mr-1"></i>LDK viešųjų pirkimų planas 2019
+                <i class="flaticon-document mr-1"></i>LDK Viešųjų pirkimų planas 2019
               </div>
               <div class="hover-color-white pointer bg-lighter hover-bg-secondary border-secondary-np text-secondary py-2 col-lg
                      row justify-content-center align-items-center mt-lg-0 mt-3">
-                <i class="flaticon-document mr-1"></i>LDK viešųjų pirkimų planas 2020
+                <i class="flaticon-document mr-1"></i>LDK Viešųjų pirkimų planas 2020
               </div>
             </div>
           </div>
@@ -213,7 +216,7 @@
 
 </section>
 <section class="bg-primary text-white">
-  <div class="container py-2 font-18">
+  <div class="container py-2 consult-stripe">
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="row justify-content-between align-items-center">
@@ -231,7 +234,7 @@
       <div class="col">
         <div class="row pb-4">
           <div class="col text-white font-weight-bold pb-4">
-            <span class="footer-title">LETUVOS DARBDAVIŲ KONFEDERACIJA (LDK)</span>
+            <span class="footer-title">LIETUVOS DARBDAVIŲ KONFEDERACIJA (LDK)</span>
           </div>
         </div>
         <div class="row pb-5 mr-lg-5 d-lg-flex d-block" style="border-right: 1px solid gray">
@@ -241,8 +244,8 @@
               +370 5 249 6448
             </div>
             <div>
-              <i class="flaticon-email grey-icon"></i>
-              info@darbdaviai.org
+              <a href="mailto:info@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+              <a class="email email-footer" href="mailto:info@darbdaviai.org">info@darbdaviai.org</a>
             </div>
             <div style="margin-left: 22px">
               Įmonės kodas: 124911322

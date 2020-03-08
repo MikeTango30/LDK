@@ -595,7 +595,7 @@ header {
         }
 
         &:hover {
-          background-color: $primary !important;
+          background-color: $secondary !important;
           color: white !important;
 
           &:after, &:before {
@@ -617,6 +617,11 @@ header {
 
 .btn-primary:hover {
   background-color: $primary !important;
+}
+
+.btn-member-active {
+  background-color: $primary!important;
+  border-color: $primary!important;
 }
 
 //Swiper

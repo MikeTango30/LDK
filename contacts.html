@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/app.css">
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS-1L-M-VclQy94meAPmeTJQplqaVkfZM"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS-1L-M-VclQy94meAPmeTJQplqaVkfZM"></script>
 </head>
 <body class="container-fluid p-0 overflow-hidden-phone">
 <header class="d-flex flex-column bg-bright">
@@ -41,12 +42,14 @@
                 <text>(+370 5) 2496 448</text>
             </div>
             <div>
-                <i class="flaticon-email grey-icon"></i>
-                <text>info@darbdaviai.org</text>
+                <a href="mailto:info@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                <a class="email" href="mailto:info@darbdaviai.org"><text>info@darbdaviai.org</text></a>
             </div>
         </div>
         <div class="mt-3 mt-lg-0">
-            <i class="fa fa-facebook-official fa-3x text-secondary pl-4 fb-icon"></i>
+            <a href="https://www.facebook.com/darbdaviai/" target="_blank">
+                <i class="fa fa-facebook-official fa-3x text-secondary pl-4 fb-icon"></i>
+            </a>
         </div>
     </div>
     <nav class="col-12 mt-3 p-0 border-top shadow" style="height: 51px">
@@ -62,16 +65,16 @@
                     <span>Apie LDK</span>
                     <ul class="list-unstyled bg-dark position-absolute">
                         <a href="./about.html">
-                            <li class="text-white bg-dark pseudo-border-0">Apie mus</li>
+                            <li class="text-white bg-dark pseudo-border-0 menu-item">Apie mus</li>
                         </a>
                         <a href="">
-                            <li class="text-white bg-dark pseudo-border-0">Valdymas</li>
+                            <li class="text-white bg-dark pseudo-border-0 menu-item">Valdymas</li>
                         </a>
                         <a href="veikla.html">
-                            <li class="text-white bg-dark pseudo-border-0">Veikla</li>
+                            <li class="text-white bg-dark pseudo-border-0 menu-item">Veikla</li>
                         </a>
                         <a href="">
-                            <li class="text-white bg-dark pseudo-border-0">Projektai</li>
+                            <li class="text-white bg-dark pseudo-border-0 menu-item">Projektai</li>
                         </a>
                     </ul>
                 </li>
@@ -80,7 +83,7 @@
                 </a>
             </ul>
             <a href="./member.html">
-                <button class="btn btn-secondary">
+                <button class="btn btn-secondary btn-member">
                     Tapkite nariu
                 </button>
             </a>
@@ -88,12 +91,12 @@
     </nav>
 </header>
 
-<section class="bg-light pb-lg-5 py-3 pb-5">
-    <div class="text-uppercase font-32 font-weight-bold text-center py-5">
+<section class="bg-light">
+    <div class="title-inner title-padding">
         KONTAKTAI
     </div>
-    <article class="bg-lighter col-12 container-managers">
-        <div class=" row flex-column justify-content-center text-uppercase font-24 font-weight-bold text-center text-lightgray managers-title">
+    <article class="bg-lighter col-12 section-padding-bottom">
+        <div class="row flex-column justify-content-center title-inner title-padding">
             VADOVAI
         </div>
         <div class="container">
@@ -104,12 +107,12 @@
                             <div class="row bg-secondary align-items-center no-gutters">
                                 <div class="col contact-info">
                                     <div class="row flex-column align-items-end">
-                                        <div class="row font-weight-bold">Danukas Arlauskas</div>
+                                        <div class="row font-weight-bold text-uppercase">Danukas Arlauskas</div>
                                         <div class="row">LDK Prezidentas</div>
                                     </div>
                                     <div class="row flex-column align-items-end">
                                         <div class="row mt-3">+370 5 249 6448</div>
-                                        <div class="row">danas@darbdaviai.org</div>
+                                        <div class="row"><a class="email text-white" href="mailto:danas@darbdaviai.org">danas@darbdaviai.org</a></div>
                                     </div>
                                 </div>
                                 <div class=" col img-fluid p-0">
@@ -124,12 +127,12 @@
                                 </div>
                                 <div class="col contact-info">
                                     <div class="row flex-column align-items-start">
-                                        <div class="row font-weight-bold">Vytautas Kisielius</div>
-                                        <div class="row">LDK Vykdandysis Direktorius</div>
+                                        <div class="row font-weight-bold text-uppercase">Vytautas Kisielius</div>
+                                        <div class="row">LDK Vykdandysis direktorius</div>
                                     </div>
                                     <div class="row flex-column align-items-start">
                                         <div class="row mt-3">+370 614 62247</div>
-                                        <div class="row">vytautas@kisielius.com</div>
+                                        <div class="row"><a class="email text-white" href="mailto:vytautas@kisielius.com">vytautas@kisielius.com</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -139,8 +142,8 @@
             </div>
         </div>
     </article>
-    <article class="col-12 py-3">
-        <div class="text-uppercase font-24 font-weight-bold text-center py-4 text-lightgray">
+    <article class="col-12 section-padding-bottom">
+        <div class="title-inner title-padding">
             LDK ADMINISTRACIJA
         </div>
         <div class="d-flex justify-content-center">
@@ -158,8 +161,14 @@
                                             <div class="row">Personalo ir administravimo direktorė</div>
                                         </div>
                                         <div class="row flex-column align-items-center">
-                                            <div class="row mt-3">+370 5 249 6448</div>
-                                            <div class="row">info@darbdaviai.org</div>
+                                            <div class="row mt-3">
+                                                <i class="flaticon-call grey-icon"></i>
+                                                +370 5 249 6448
+                                            </div>
+                                            <div class="row">
+                                                <a href="mailto:info@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                                                <a class="email" href="mailto:info@darbdaviai.org">info@darbdaviai.org</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -174,8 +183,14 @@
                                             <div class="row">Finansų departamento direktorė</div>
                                         </div>
                                         <div class="row flex-column align-items-center">
-                                            <div class="row mt-3">+370 5 249 7839</div>
-                                            <div class="row">zita@darbdaviai.org</div>
+                                            <div class="row mt-3">
+                                                <i class="flaticon-call grey-icon"></i>
+                                                +370 5 249 7839
+                                            </div>
+                                            <div class="row">
+                                                <a href="mailto:zita@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                                                <a class="email" href="mailto:zita@darbdaviai.org">zita@darbdaviai.org</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -192,8 +207,14 @@
                                             <div class="row">Projektų vadovė</div>
                                         </div>
                                         <div class="row flex-column align-items-center">
-                                            <div class="row mt-3">+370 5 249 8345</div>
-                                            <div class="row">rima@darbdaviai.org</div>
+                                            <div class="row mt-3">
+                                                <i class="flaticon-call grey-icon"></i>
+                                                +370 5 249 8345
+                                            </div>
+                                            <div class="row">
+                                                <a href="mailto:rima@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                                                <a class="email" href="mailto:rima@darbdaviai.org">rima@darbdaviai.org</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -208,8 +229,14 @@
                                             <div class="row">Projektų departamento direktorė</div>
                                         </div>
                                         <div class="row flex-column align-items-center">
-                                            <div class="row mt-3">+370 5 249 7377</div>
-                                            <div class="row">jolanta@darbdaviai.org</div>
+                                            <div class="row mt-3">
+                                                <i class="flaticon-call grey-icon"></i>
+                                                +370 5 249 7377
+                                            </div>
+                                            <div class="row">
+                                                <a href="mailto:jolanta@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                                                <a class="email" href="mailto:jolanta@darbdaviai.org">jolanta@darbdaviai.org</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -222,7 +249,7 @@
     </article>
 </section>
 <section class="bg-primary text-white">
-    <div class="container py-2 font-18">
+    <div class="container py-2 consult-stripe">
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="row justify-content-between align-items-center no-gutters">
@@ -240,7 +267,7 @@
             <div class="col">
                 <div class="row pb-4">
                     <div class="col text-white font-weight-bold pb-4">
-                        <span class="footer-title">LETUVOS DARBDAVIŲ KONFEDERACIJA (LDK)</span>
+                        <span class="footer-title">LIETUVOS DARBDAVIŲ KONFEDERACIJA (LDK)</span>
                     </div>
                 </div>
                 <div class="row pb-5 mr-lg-5 d-lg-flex d-block" style="border-right: 1px solid gray">
@@ -250,8 +277,8 @@
                             +370 5 249 6448
                         </div>
                         <div>
-                            <i class="flaticon-email grey-icon"></i>
-                            info@darbdaviai.org
+                            <a href="mailto:info@darbdaviai.org"><i class="flaticon-email grey-icon"></i></a>
+                            <a class="email email-footer" href="mailto:info@darbdaviai.org">info@darbdaviai.org</a>
                         </div>
                         <div style="margin-left: 22px">
                             Įmonės kodas: 124911322

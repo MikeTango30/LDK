@@ -15,7 +15,7 @@
 
 .container-wider {
   @media (min-width: 1200px) {
-    max-width: 1700px; //for ultra wide screen
+    max-width: 1920px; //for ultra wide screen
   }
 }
 
@@ -71,7 +71,7 @@
 
 .activities {
   div {
-    min-height: 150px;
+    min-height: 85px;
     margin: 0 15px;
   }
 }
@@ -115,7 +115,7 @@ a[href^="https://maps.google.com/maps"] {
   }
 
   li {
-    padding: 1rem .2rem;
+    padding: 1rem .2rem 0;
   }
 }
 
@@ -221,14 +221,6 @@ a[href^="https://maps.google.com/maps"] {
   color: #ff1111;
 }
 
-.container-managers {
-  padding-bottom: 3.125rem;
-
-  .managers-title {
-    height: 125px;
-  }
-}
-
 .flip-horizontally {
   transform: scaleX(-1);
 }
@@ -316,3 +308,34 @@ a[href^="https://maps.google.com/maps"] {
   object-position: center;
 }
 
+.email {
+  color: #212529;
+  text-decoration: none;
+  &:hover{
+    color: #212529;
+    text-decoration: none;
+  }
+}
+
+.email-footer {
+  color: darkgray;
+  &:hover {
+    color: darkgray;
+  }
+}
+
+.title-padding {
+  padding: 1.75rem 0;
+}
+
+.section-padding {
+  padding: 2.25rem 0;
+}
+
+.section-padding-bottom {
+  padding-bottom: 2.25rem;
+}
+
+.menu-item {
+  padding-right: .5rem;
+}

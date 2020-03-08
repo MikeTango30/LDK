@@ -4,6 +4,11 @@ body {
   font-family: $font-family__body;
 }
 
+.btn-member {
+  width: 110px;
+  font-size: $font-size__small;
+}
+
 header, footer {
   font-size: $font-size__small;
 
@@ -93,7 +98,7 @@ header, footer {
 
 .about-bottom.activities {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .modal-content, .btn-contact-us {
@@ -114,6 +119,27 @@ header, footer {
 
 .btn-contact-us {
   text-transform: uppercase;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+.consult-stripe {
+  font-size: $font-size__medium;
+
+  button {
+    font-weight: 700;
+    font-size: $font-size__small;
+    text-transform: uppercase;
+  }
+}
+
+.title-inner {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
 }
 
 

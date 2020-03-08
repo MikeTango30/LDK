@@ -446,7 +446,7 @@ header {
       margin-top: 35px;
       border-right: 1px solid darkgray; }
     .middle-nav nav ul li:hover {
-      background-color: #20947e !important;
+      background-color: #0d6aa5 !important;
       color: white !important; }
       .middle-nav nav ul li:hover:after, .middle-nav nav ul li:hover:before {
         border-left: 0;
@@ -460,6 +460,10 @@ header {
 
 .btn-primary:hover {
   background-color: #20947e !important; }
+
+.btn-member-active {
+  background-color: #20947e !important;
+  border-color: #20947e !important; }
 
 html, body {
   position: relative;
