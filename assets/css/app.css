@@ -167,13 +167,13 @@ a[href^="https://maps.google.com/maps"] {
     bottom: 0.75rem !important; } }
 @media (max-width: 768px) {
   #layerslider #ls-text1, #layerslider #ls-text2, #layerslider #ls-text3, #layerslider #ls-text4 {
-    font-size: 1rem !important; }
+    font-size: 1.25rem !important; }
 
   .ls-bottom-slidebuttons {
     bottom: 0.5rem !important; } }
 @media (max-width: 576px) {
   #layerslider #ls-text1, #layerslider #ls-text2, #layerslider #ls-text3, #layerslider #ls-text4 {
-    font-size: 0.75rem !important; }
+    font-size: 1rem !important; }
 
   .ls-bottom-slidebuttons {
     bottom: 0 !important; } }
