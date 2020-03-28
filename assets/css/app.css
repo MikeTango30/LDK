@@ -1,5 +1,6 @@
 #map {
-  height: 250px; }
+  height: 182px;
+  margin-left: -7px; }
 
 @media (max-width: 576px) {
   .overflow-hidden-phone {
@@ -206,7 +207,22 @@ a[href^="https://maps.google.com/maps"] {
   height: 100vh; }
   .full-height .middle-nav {
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    right: 0;
+    left: 0; }
+
+footer .footer-content {
+  padding-top: 3.125rem;
+  margin-bottom: 3rem; }
+footer .footer-title {
+  margin-bottom: 2.75rem; }
+footer .footer-requisites {
+  padding-top: 2.3125rem; }
+footer .py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+footer .footer-credits {
+  border-top: 1px solid #535353; }
 
 body {
   font-family: "OpenSans", sans-serif; }

@@ -1,6 +1,7 @@
 // map container
 #map {
-  height: 250px;
+  height: 182px;
+  margin-left: -7px;
 }
 
 @media (max-width: 576px) {
@@ -16,6 +17,8 @@
 .container-wider {
   @media (min-width: 1200px) {
     max-width: 1920px; //for ultra wide screen
+    //margin-left: auto;
+    //margin-right: auto;
   }
 }
 
@@ -253,33 +256,18 @@ a[href^="https://maps.google.com/maps"] {
   }
 }
 @media (max-width: 992px) {
-  #layerslider {
-    #ls-text1, #ls-text2, #ls-text3, #ls-text4 {
-      //font-size: 1.25rem!important;
-    }
-  }
   .ls-bottom-slidebuttons {
     bottom: .75rem!important;
   }
 }
 
 @media (max-width: 768px) {
-  #layerslider {
-    #ls-text1, #ls-text2, #ls-text3, #ls-text4 {
-      //font-size: 1.25rem!important;
-    }
-  }
   .ls-bottom-slidebuttons {
     bottom: .5rem!important;
   }
 }
 
 @media (max-width: 576px) {
-  #layerslider {
-    #ls-text1, #ls-text2, #ls-text3, #ls-text4 {
-      //font-size: 1rem!important;
-    }
-  }
   .ls-bottom-slidebuttons {
     bottom: -.25rem!important;
   }
@@ -334,5 +322,30 @@ a[href^="https://maps.google.com/maps"] {
   .middle-nav {
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+footer {
+  .footer-content {
+    padding-top: 3.125rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-title {
+    margin-bottom: 2.75rem;
+  }
+  .footer-requisites {
+    padding-top: 2.3125rem;
+  }
+
+  .py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .footer-credits {
+    border-top: 1px solid #535353;
   }
 }
