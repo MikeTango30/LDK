@@ -64,8 +64,6 @@
   border-radius: 0;
 }
 
-//.fc-body .fc-row { min-height: 45px;
-
 .about-bottom {
   div {
     min-height: 200px;
@@ -113,6 +111,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .middle-swiper {
+  padding-bottom: 200px;
   .year {
     padding: 1rem .5rem;
   }
@@ -163,6 +162,7 @@ a[href^="https://maps.google.com/maps"] {
 .activities-list {
   list-style: none;
   padding: 0;
+
   li::before {
     content: "- ";
   }
@@ -246,48 +246,56 @@ a[href^="https://maps.google.com/maps"] {
   }
 }
 
+h2.ls-layer {
+  font-size: 14px!important; // layerslider scales it down
+  @media (min-width: 1024px) {
+    font-size: 18px!important; // fixed size
+  }
+}
+
 .ls-bottom-slidebuttons {
   bottom: 1.125rem;
 }
 
 @media (max-width: 1024px) {
   .ls-bottom-slidebuttons {
-    bottom: 1rem!important;
+    bottom: 1rem !important;
   }
 }
+
 @media (max-width: 992px) {
   .ls-bottom-slidebuttons {
-    bottom: .75rem!important;
+    bottom: .75rem !important;
   }
 }
 
 @media (max-width: 768px) {
   .ls-bottom-slidebuttons {
-    bottom: .5rem!important;
+    bottom: .5rem !important;
   }
 }
 
 @media (max-width: 576px) {
   .ls-bottom-slidebuttons {
-    bottom: -.25rem!important;
+    bottom: -.25rem !important;
   }
 }
 
 .close {
   position: absolute;
-  top:  1rem;
+  top: 1rem;
   right: 1rem;
 }
 
 .ls-bg, .ls-curtiles img, .ls-nexttile img {
-  object-fit: cover;
   object-position: center;
 }
 
 .email {
   color: #212529;
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     color: #212529;
     text-decoration: none;
   }
@@ -295,6 +303,7 @@ a[href^="https://maps.google.com/maps"] {
 
 .email-footer {
   color: darkgray;
+
   &:hover {
     color: darkgray;
   }
@@ -308,6 +317,10 @@ a[href^="https://maps.google.com/maps"] {
   padding: 2.25rem 0;
 }
 
+.section-padding-partners {
+  padding-top: .8125rem;
+}
+
 .section-padding-bottom {
   padding-bottom: 2.25rem;
 }
@@ -319,11 +332,20 @@ a[href^="https://maps.google.com/maps"] {
 .full-height {
   position: relative;
   height: 100vh;
+
   .middle-nav {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
+
+    .blue-icon {
+      padding-bottom: 0;
+      margin-bottom: -5px;
+    }
+    ul {
+      font-weight: 600;
+    }
   }
 }
 
@@ -336,6 +358,7 @@ footer {
   .footer-title {
     margin-bottom: 2.75rem;
   }
+
   .footer-requisites {
     padding-top: 2.3125rem;
   }
@@ -347,5 +370,35 @@ footer {
 
   .footer-credits {
     border-top: 1px solid #535353;
+  }
+}
+
+.claim {
+  background-color: #0d6aa5;
+
+  &:hover {
+    background-color: #0a5382;
+  }
+}
+
+nav {
+  button {
+    text-transform: uppercase;
+  }
+  .btn {
+    font-weight: 700;
+    padding: .375rem!important; //override bootstrap
+  }
+}
+
+.download-link {
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  &:visited {
+    color: #fff;
   }
 }

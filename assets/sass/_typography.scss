@@ -11,6 +11,9 @@ body {
 
 header, footer {
   font-size: $font-size__small;
+  ul {
+    font-weight: 700;
+  }
 
   .footer-title {
     font-size: $font-size__medium;

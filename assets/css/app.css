@@ -67,10 +67,12 @@ a[href^="https://maps.google.com/maps"] {
 .gmnoprint div {
   background: none !important; }
 
-.middle-swiper .year {
-  padding: 1rem .5rem; }
-.middle-swiper li {
-  padding: 1rem .2rem 0; }
+.middle-swiper {
+  padding-bottom: 200px; }
+  .middle-swiper .year {
+    padding: 1rem .5rem; }
+  .middle-swiper li {
+    padding: 1rem .2rem 0; }
 
 .contacts-managers .img-fluid {
   max-width: 200px; }
@@ -154,6 +156,12 @@ a[href^="https://maps.google.com/maps"] {
     .ls-bottom-nav-wrapper {
       max-width: 1140px; } }
 
+h2.ls-layer {
+  font-size: 14px !important; }
+  @media (min-width: 1024px) {
+    h2.ls-layer {
+      font-size: 18px !important; } }
+
 .ls-bottom-slidebuttons {
   bottom: 1.125rem; }
 
@@ -162,20 +170,19 @@ a[href^="https://maps.google.com/maps"] {
     bottom: 1rem !important; } }
 @media (max-width: 992px) {
   .ls-bottom-slidebuttons {
-    bottom: 0.75rem !important; } }
+    bottom: .75rem !important; } }
 @media (max-width: 768px) {
   .ls-bottom-slidebuttons {
-    bottom: 0.5rem !important; } }
+    bottom: .5rem !important; } }
 @media (max-width: 576px) {
   .ls-bottom-slidebuttons {
-    bottom: -0.25rem !important; } }
+    bottom: -.25rem !important; } }
 .close {
   position: absolute;
   top: 1rem;
   right: 1rem; }
 
 .ls-bg, .ls-curtiles img, .ls-nexttile img {
-  object-fit: cover;
   object-position: center; }
 
 .email {
@@ -196,6 +203,9 @@ a[href^="https://maps.google.com/maps"] {
 .section-padding {
   padding: 2.25rem 0; }
 
+.section-padding-partners {
+  padding-top: .8125rem; }
+
 .section-padding-bottom {
   padding-bottom: 2.25rem; }
 
@@ -210,6 +220,11 @@ a[href^="https://maps.google.com/maps"] {
     bottom: 0;
     right: 0;
     left: 0; }
+    .full-height .middle-nav .blue-icon {
+      padding-bottom: 0;
+      margin-bottom: -5px; }
+    .full-height .middle-nav ul {
+      font-weight: 600; }
 
 footer .footer-content {
   padding-top: 3.125rem;
@@ -224,6 +239,26 @@ footer .py-12 {
 footer .footer-credits {
   border-top: 1px solid #535353; }
 
+.claim {
+  background-color: #0d6aa5; }
+  .claim:hover {
+    background-color: #0a5382; }
+
+nav button {
+  text-transform: uppercase; }
+nav .btn {
+  font-weight: 700;
+  padding: 0.375rem !important; }
+
+.download-link {
+  color: #fff; }
+  .download-link:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; }
+  .download-link:visited {
+    color: #fff; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 
@@ -233,6 +268,8 @@ body {
 
 header, footer {
   font-size: 0.75rem; }
+  header ul, footer ul {
+    font-weight: 700; }
   header .footer-title, footer .footer-title {
     font-size: 0.875rem; }
   header .lang .btn, footer .lang .btn {

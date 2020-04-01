@@ -274,12 +274,12 @@ $theme-colors: (
     &:nth-child(even) {
       background: $secondary;
       &:hover{
-        background: lighten($secondary, 10)
+        background: darken($secondary, 15)
       }
     }
 
     &:hover{
-      background: lighten($primary, 10)
+      background: darken($primary, 10)
     }
   }
 }
@@ -292,9 +292,15 @@ $theme-colors: (
     padding: 10px!important;
     &:nth-child(odd) {
       background: $primary!important;
+      &:hover {
+        background: darken($primary, 10)!important;
+      }
     }
     &:nth-child(even) {
       background: $secondary!important;
+      &:hover {
+        background: darken($secondary, 15)!important;
+      }
     }
   }
 }
@@ -563,7 +569,7 @@ header {
   nav {
     ul {
       li {
-        height: 90px;
+        height: 100px;
         cursor: pointer;
         font-size: 14px !important;
         position: relative;

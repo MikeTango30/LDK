@@ -205,9 +205,9 @@
   .end-swiper .swiper-slide:nth-child(even) {
     background: #0d6aa5; }
     .end-swiper .swiper-slide:nth-child(even):hover {
-      background: #1188d4; }
+      background: #073c5e; }
   .end-swiper .swiper-slide:hover {
-    background: #29bea2; }
+    background: #176a5a; }
 
 .about-bottom div {
   cursor: pointer !important;
@@ -217,8 +217,12 @@
   padding: 10px !important; }
   .about-bottom div:nth-child(odd) {
     background: #20947e !important; }
+    .about-bottom div:nth-child(odd):hover {
+      background: #176a5a !important; }
   .about-bottom div:nth-child(even) {
     background: #0d6aa5 !important; }
+    .about-bottom div:nth-child(even):hover {
+      background: #073c5e !important; }
 
 div.section {
   border: 1px solid black; }
@@ -421,7 +425,7 @@ header {
   -moz-box-shadow: 2px 3px 22px -4px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 22px -4px rgba(0, 0, 0, 0.75); }
   .middle-nav nav ul li {
-    height: 90px;
+    height: 100px;
     cursor: pointer;
     font-size: 14px !important;
     position: relative;

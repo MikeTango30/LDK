@@ -4,6 +4,7 @@
     // adjust layerslider to screen resizing;
     window.onresize = () => {
         adjustLayerslider();
+
     };
 
     // breakpoints
@@ -11,7 +12,10 @@
     const sm = window.matchMedia('(min-width: 576px)');
     const md = window.matchMedia('(min-width: 768px)');
     const lg = window.matchMedia('(min-width: 992px)');
+    const lg1024 = window.matchMedia('(min-width: 1024px)');
     const xl = window.matchMedia('(min-width: 1200px)');
+    const xl1366 = window.matchMedia('(min-width: 1366px)');
+    const xl1440 = window.matchMedia('(min-width: 1440px)');
     const xxl = window.matchMedia('(min-width: 1681px)');
 
     // phone height breakpoints
@@ -20,10 +24,14 @@
     const heightMd = window.matchMedia('(min-height: 660px)');
     const heightXl = window.matchMedia('(min-height: 730px)');
     const heightXxl = window.matchMedia('(min-height: 810px)');
+    const height900 = window.matchMedia('(min-height: 900px)');
+    const height1024 = window.matchMedia('(min-height: 1024px)');
+    const height1080 = window.matchMedia('(min-height: 1080px)');
+    const height1366 = window.matchMedia('(min-height: 1366px)');
 
     // width in layerslider's initial html's inline styling
-    const defaultLayerOneWidth = document.querySelector('img.ls-l:nth-child(2)').width;
-    const defaultLayerTwoWidth = document.querySelector('img.ls-l:nth-child(3)').width;
+    const defaultLayerOneWidth = document.querySelector('img.ls-l:nth-child(2)').width;// * .7;
+    const defaultLayerTwoWidth = document.querySelector('img.ls-l:nth-child(3)').width;// * .7;
 
     //account for sticky header
     const nav = document.querySelector('nav');
@@ -36,12 +44,24 @@
         let newFullHeight = layersliderHeight + middleNavHeight + headerHeight;
 
         for (let mutation of mutationsList) {
-             mutation.target.classList.contains('sticky') ? fullHeight.style.height = `${newFullHeight}px`
-                 : fullHeight.style.height = '100vh';
+            mutation.target.classList.contains('sticky') ? fullHeight.style.height = `${newFullHeight}px`
+                : fullHeight.style.height = '100vh';
         }
     };
     const observer = new MutationObserver(callback);
     observer.observe(nav, config);
+
+    // $('#layerslider').on('sliderDidLoad', function(event, slider) {
+    //     // let screenWidth =  document.body.clientWidth > 1920 ? 1920 :document.body.clientWidth;
+    //     // const currentContainerWidth = document.querySelector('.container').clientWidth;
+    //     // let textPositionLeft = (screenWidth - currentContainerWidth)/2;
+    //
+    //     let layersliderText = document.querySelectorAll('h2.ls-layer');
+    //
+    //     layersliderText.forEach(text => {
+    //         text.style.top = '90%';
+    //     })
+    // });
 
 
     function adjustLayerslider() {
@@ -52,7 +72,7 @@
         let layersliderHeight = fullHeight - middleNavHeight - headerHeight;
 
         // adjust overlays for screen widths
-        let layerSize = adjustLayerSizeForBreakpoints(layersliderHeight);
+        // let layerSize = adjustLayerSizeForBreakpoints(layersliderHeight);
 
         let firstLayers = document.querySelectorAll('img.ls-layer:nth-child(2)');
         let secondLayers = document.querySelectorAll('img.ls-layer:nth-child(3)');
@@ -60,14 +80,13 @@
         layerslider.style.height = `${layersliderHeight}px`;
 
         firstLayers.forEach((layer) => {
-            layer.style.height = `${layerSize.layerHeight}px`;
-            layer.style.width = `${layerSize.layerOneWidth}px`;
+            layer.style.height = `100%`;
+            layer.style.width = `95%`;
         });
         secondLayers.forEach((layer) => {
-            layer.style.height = `${layerSize.layerHeight}px`;
-            layer.style.width = `${layerSize.layerTwoWidth}px`;
+            layer.style.height = `100%`;
+            layer.style.width = `85%`;
         });
-
 
         // adjust layer text position for common phone heights
         // WHY MAGIC NUMBERS: layerslider has limited ways for layer positioning and does shrink layers on resizing
@@ -137,49 +156,5 @@
                 text.style.left = '205px';
             })
         }
-    }
-
-    function adjustLayerSizeForBreakpoints(layersliderHeight) {
-        let layerHeight = layersliderHeight;
-        let layerOneWidth = defaultLayerOneWidth;
-        let layerTwoWidth = defaultLayerTwoWidth;
-
-        if (xs.matches) {
-            layerHeight = layersliderHeight + 1100;
-            layerOneWidth = defaultLayerOneWidth - 100;
-            layerTwoWidth = defaultLayerTwoWidth - 100;
-        }
-
-        if (sm.matches) {
-            layerHeight = layersliderHeight + 600;
-            layerOneWidth = defaultLayerOneWidth - 200;
-            layerTwoWidth = defaultLayerTwoWidth - 200;
-        }
-
-        if (md.matches) {
-            layerHeight = layersliderHeight + 400;
-            layerOneWidth = defaultLayerOneWidth - 250;
-            layerTwoWidth = defaultLayerTwoWidth - 250;
-        }
-        if (lg.matches) {
-            layerHeight = layersliderHeight + 200;
-            layerOneWidth = defaultLayerOneWidth - 300;
-            layerTwoWidth = defaultLayerTwoWidth - 300;
-        }
-        if (xl.matches) {
-            layerHeight = layersliderHeight;
-            layerOneWidth = defaultLayerOneWidth - 400;
-            layerTwoWidth = defaultLayerTwoWidth - 400;
-        }
-        if (xxl.matches) {
-            layerOneWidth = defaultLayerOneWidth - 200;
-            layerTwoWidth = defaultLayerTwoWidth - 200;
-        }
-
-        return {
-            layerHeight: layerHeight,
-            layerOneWidth: layerOneWidth,
-            layerTwoWidth: layerTwoWidth
-        };
     }
 })();
