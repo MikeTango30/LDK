@@ -157,10 +157,10 @@ a[href^="https://maps.google.com/maps"] {
       max-width: 1140px; } }
 
 h2.ls-layer {
-  font-size: 14px !important; }
+  font-size: 14px; }
   @media (min-width: 1024px) {
     h2.ls-layer {
-      font-size: 18px !important; } }
+      font-size: 21px !important; } }
 
 .ls-bottom-slidebuttons {
   bottom: 1.125rem; }

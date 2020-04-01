@@ -247,9 +247,9 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 h2.ls-layer {
-  font-size: 14px!important; // layerslider scales it down
+  font-size: 14px; // layerslider scales it down
   @media (min-width: 1024px) {
-    font-size: 18px!important; // fixed size
+    font-size: 21px!important; // fixed size
   }
 }
 

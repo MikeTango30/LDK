@@ -1,5 +1,6 @@
 'use strict';
 
+// adjust background images to fit screen width
 (() => {
     const backgrounds = document.querySelectorAll('.ls-bg');
     backgrounds.forEach((background) => {

@@ -4,19 +4,16 @@
     // adjust layerslider to screen resizing;
     window.onresize = () => {
         adjustLayerslider();
-
     };
 
     // breakpoints
-    const xs = window.matchMedia('(min-width: 0px)');
-    const sm = window.matchMedia('(min-width: 576px)');
+    // const xs = window.matchMedia('(min-width: 0px)');
+    // const sm = window.matchMedia('(min-width: 576px)');
     const md = window.matchMedia('(min-width: 768px)');
-    const lg = window.matchMedia('(min-width: 992px)');
-    const lg1024 = window.matchMedia('(min-width: 1024px)');
     const xl = window.matchMedia('(min-width: 1200px)');
-    const xl1366 = window.matchMedia('(min-width: 1366px)');
-    const xl1440 = window.matchMedia('(min-width: 1440px)');
-    const xxl = window.matchMedia('(min-width: 1681px)');
+    const lg = window.matchMedia('(min-width: 992px)');
+    const xxl = window.matchMedia('(min-width: 1680px)');
+    const xxxl = window.matchMedia('(min-width: 1920px)');
 
     // phone height breakpoints
     const heightXs = window.matchMedia('(min-height: 550px)');
@@ -24,14 +21,6 @@
     const heightMd = window.matchMedia('(min-height: 660px)');
     const heightXl = window.matchMedia('(min-height: 730px)');
     const heightXxl = window.matchMedia('(min-height: 810px)');
-    const height900 = window.matchMedia('(min-height: 900px)');
-    const height1024 = window.matchMedia('(min-height: 1024px)');
-    const height1080 = window.matchMedia('(min-height: 1080px)');
-    const height1366 = window.matchMedia('(min-height: 1366px)');
-
-    // width in layerslider's initial html's inline styling
-    const defaultLayerOneWidth = document.querySelector('img.ls-l:nth-child(2)').width;// * .7;
-    const defaultLayerTwoWidth = document.querySelector('img.ls-l:nth-child(3)').width;// * .7;
 
     //account for sticky header
     const nav = document.querySelector('nav');
@@ -51,6 +40,7 @@
     const observer = new MutationObserver(callback);
     observer.observe(nav, config);
 
+    // try calc correct text position: distance from left
     // $('#layerslider').on('sliderDidLoad', function(event, slider) {
     //     // let screenWidth =  document.body.clientWidth > 1920 ? 1920 :document.body.clientWidth;
     //     // const currentContainerWidth = document.querySelector('.container').clientWidth;
@@ -63,22 +53,20 @@
     //     })
     // });
 
-
     function adjustLayerslider() {
         const layerslider = document.getElementById('layerslider');
         let fullHeight = document.querySelector('.full-height').clientHeight;
         let middleNavHeight = document.querySelector('.middle-nav').clientHeight;
         let headerHeight = document.querySelector('header').clientHeight;
+
+        // adjust layers for screen widths
+        // layerslider height
         let layersliderHeight = fullHeight - middleNavHeight - headerHeight;
-
-        // adjust overlays for screen widths
-        // let layerSize = adjustLayerSizeForBreakpoints(layersliderHeight);
-
-        let firstLayers = document.querySelectorAll('img.ls-layer:nth-child(2)');
-        let secondLayers = document.querySelectorAll('img.ls-layer:nth-child(3)');
-
         layerslider.style.height = `${layersliderHeight}px`;
 
+        //overlays position
+        let firstLayers = document.querySelectorAll('img.ls-layer:nth-child(2)');
+        let secondLayers = document.querySelectorAll('img.ls-layer:nth-child(3)');
         firstLayers.forEach((layer) => {
             layer.style.height = `100%`;
             layer.style.width = `95%`;
@@ -88,10 +76,16 @@
             layer.style.width = `85%`;
         });
 
+        // text position
+        adjustTextPositionForBreakpoints();
+    }
+
+    function adjustTextPositionForBreakpoints() {
         // adjust layer text position for common phone heights
         // WHY MAGIC NUMBERS: layerslider has limited ways for layer positioning and does shrink layers on resizing
         let layersliderText = document.querySelectorAll('h2.ls-layer');
 
+        // adjust acording to screen height - mobile
         if (heightXs.matches) {
             layersliderText.forEach(text => {
                 text.style.left = '85px';
@@ -116,15 +110,15 @@
         if (heightXl.matches) {
             layersliderText.forEach(text => {
                 text.style.left = '70px';
-                text.style.top = '105%';
-                text.style.fontSize = '2.35rem';
+                text.style.top = '110%';
+                text.style.fontSize = '1.85rem';
             })
         }
         if (heightXxl.matches) {
             layersliderText.forEach(text => {
                 text.style.left = '70px';
-                text.style.top = '125%';
-                text.style.fontSize = '2.5rem';
+                text.style.top = '140%';
+                text.style.fontSize = '1.85rem';
             })
         }
 
@@ -139,7 +133,7 @@
         }
         if (lg.matches) {
             layersliderText.forEach(text => {
-                text.style.left = '58px';
+                // text.style.left = '48px';
                 text.style.top = '140%';
                 text.style.fontSize = '2rem';
             })
@@ -153,7 +147,15 @@
         }
         if (xxl.matches) {
             layersliderText.forEach(text => {
+                text.style.left = '55px';
+                text.style.top = '85%';
+                text.style.fontSize = '24px';
+            })
+        }
+        if (xxxl.matches) {
+            layersliderText.forEach(text => {
                 text.style.left = '205px';
+                text.style.top = '90%';
             })
         }
     }
