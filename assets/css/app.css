@@ -259,6 +259,18 @@ nav .btn {
   .download-link:visited {
     color: #fff; }
 
+.download-link-green {
+  color: #20947e; }
+  .download-link-green:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; }
+  .download-link-green:visited {
+    color: #20947e; }
+
+.file:hover a {
+  color: #fff; }
+
 body {
   font-family: "OpenSans", sans-serif; }
 

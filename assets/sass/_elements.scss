@@ -402,3 +402,21 @@ nav {
     color: #fff;
   }
 }
+
+.download-link-green {
+  color: #20947e;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  &:visited {
+    color: #20947e;
+  }
+}
+
+.file:hover {
+  a {
+    color: #fff;
+  }
+}
