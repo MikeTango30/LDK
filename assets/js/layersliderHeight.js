@@ -7,22 +7,9 @@
     };
 
     // breakpoints
-    // const xs = window.matchMedia('(min-width: 0px)');
-    // const sm = window.matchMedia('(min-width: 576px)');
     const md = window.matchMedia('(min-width: 768px)');
-    const xl = window.matchMedia('(min-width: 1200px)');
-    const lg = window.matchMedia('(min-width: 992px)');
-    const xxl = window.matchMedia('(min-width: 1680px)');
-    const xxxl = window.matchMedia('(min-width: 1920px)');
 
-    // phone height breakpoints
-    const heightXs = window.matchMedia('(min-height: 550px)');
-    const heightSm = window.matchMedia('(min-height: 640px)');
-    const heightMd = window.matchMedia('(min-height: 660px)');
-    const heightXl = window.matchMedia('(min-height: 730px)');
-    const heightXxl = window.matchMedia('(min-height: 810px)');
-
-    //account for sticky header
+    // account for sticky header
     const nav = document.querySelector('nav');
     const config = {attributes: true};
     const callback = function (mutationsList, observer) {
@@ -40,18 +27,62 @@
     const observer = new MutationObserver(callback);
     observer.observe(nav, config);
 
-    // try calc correct text position: distance from left
-    // $('#layerslider').on('sliderDidLoad', function(event, slider) {
-    //     // let screenWidth =  document.body.clientWidth > 1920 ? 1920 :document.body.clientWidth;
-    //     // const currentContainerWidth = document.querySelector('.container').clientWidth;
-    //     // let textPositionLeft = (screenWidth - currentContainerWidth)/2;
-    //
-    //     let layersliderText = document.querySelectorAll('h2.ls-layer');
-    //
-    //     layersliderText.forEach(text => {
-    //         text.style.top = '90%';
-    //     })
-    // });
+    // add text to layerslider nav buttons
+    $('#layerslider').on('sliderDidLoad', function() {
+        let textStrings = [
+            'Vienijame smulkų ir vidutinį <br> verslą Lietuvoje',
+            'Atstovaujame SVV įmonių interesus  <br> Lietuvoje ir užsienyje',
+            'Skatiname SVV įmonių socialinę <br> atsakomybę ir darbo vietų kūrimą',
+            'Esame nuolatos matomi ir girdimi <br> žiniasklaidoje'
+        ];
+
+        let lsNavButtons = document.querySelector('.ls-bottom-slidebuttons').childNodes;
+        // lsNavButtons.forEach(button => {
+        //     button.setAttribute('style', 'width: 5px !important');
+        //     button.setAttribute('style', 'height: 5px !important');
+        // })
+        let i = 0;
+
+        lsNavButtons.forEach(button => {
+            let text = document.createElement('h2');
+            // apply style
+            text.style.position = 'absolute';
+            text.style.top = '-35px';
+            text.style.width = '600px';
+            text.style.left = '5px';
+            text.style.color = '#fff';
+            text.style.fontSize = '24px';
+            text.style.fontFamily = 'Open Sans';
+            text.style.fontWeight = '600';
+            text.style.textTransform = 'uppercase';
+
+            text.innerHTML = textStrings[i];
+            text.classList.toggle('d-none');
+            text.classList.add('custom-text-slide');
+            button.appendChild(text);
+            i++;
+
+            // show first slide text
+            if (button.classList.contains('ls-nav-active')) {
+                text.classList.toggle('d-none');
+            }
+        });
+
+        // toggle text on slide change
+        $('#layerslider').on('slideChangeWillComplete', function () {
+            let lsNavButtons = document.querySelector('.ls-bottom-slidebuttons').childNodes;
+            lsNavButtons.forEach(button => {
+                if (button.classList.contains('ls-nav-active')) {
+                    button.firstChild.classList.toggle('d-none');
+                    if (button.nextSibling) {
+                        button.nextSibling.firstChild.classList.toggle('d-none');
+                    } else {
+                        lsNavButtons[0].firstChild.classList.toggle('d-none');
+                    }
+                }
+            })
+        });
+    });
 
     function adjustLayerslider() {
         const layerslider = document.getElementById('layerslider');
@@ -59,104 +90,33 @@
         let middleNavHeight = document.querySelector('.middle-nav').clientHeight;
         let headerHeight = document.querySelector('header').clientHeight;
 
-        // adjust layers for screen widths
-        // layerslider height
+        // adjust layerslider height
         let layersliderHeight = fullHeight - middleNavHeight - headerHeight;
         layerslider.style.height = `${layersliderHeight}px`;
 
-        //overlays position
+        // overlays position
         let firstLayers = document.querySelectorAll('img.ls-layer:nth-child(2)');
         let secondLayers = document.querySelectorAll('img.ls-layer:nth-child(3)');
+
         firstLayers.forEach((layer) => {
             layer.style.height = `100%`;
-            layer.style.width = `95%`;
+            layer.style.width = `120%`;
+            if (md.matches) {
+                firstLayers.forEach(layer => {
+                        layer.style.height = `100%`;
+                        layer.style.width = `95%`;
+                    });
+                }
         });
         secondLayers.forEach((layer) => {
             layer.style.height = `100%`;
-            layer.style.width = `85%`;
+            layer.style.width = `110%`;
+            if (md.matches) {
+                secondLayers.forEach(layer => {
+                    layer.style.height = `100%`;
+                    layer.style.width = `85%`;
+                })
+            }
         });
-
-        // text position
-        adjustTextPositionForBreakpoints();
-    }
-
-    function adjustTextPositionForBreakpoints() {
-        // adjust layer text position for common phone heights
-        // WHY MAGIC NUMBERS: layerslider has limited ways for layer positioning and does shrink layers on resizing
-        let layersliderText = document.querySelectorAll('h2.ls-layer');
-
-        // adjust acording to screen height - mobile
-        if (heightXs.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '85px';
-                text.style.top = '85%';
-                text.style.fontSize = '1.9rem';
-            })
-        }
-        if (heightSm.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '70px';
-                text.style.top = '95%';
-                text.style.fontSize = '2.25rem';
-            })
-        }
-        if (heightMd.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '70px';
-                text.style.top = '95%';
-                text.style.fontSize = '2.25rem';
-            })
-        }
-        if (heightXl.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '70px';
-                text.style.top = '110%';
-                text.style.fontSize = '1.85rem';
-            })
-        }
-        if (heightXxl.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '70px';
-                text.style.top = '140%';
-                text.style.fontSize = '1.85rem';
-            })
-        }
-
-        // adjust text position according to screen width
-        if (md.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '67px';
-                text.style.top = '113%';
-                text.style.fontSize = '2rem';
-                text.style.height = '15%';
-            })
-        }
-        if (lg.matches) {
-            layersliderText.forEach(text => {
-                // text.style.left = '48px';
-                text.style.top = '140%';
-                text.style.fontSize = '2rem';
-            })
-        }
-        if (xl.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '100px';
-                text.style.top = '85%';
-                text.style.fontSize = '24px';
-            })
-        }
-        if (xxl.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '55px';
-                text.style.top = '85%';
-                text.style.fontSize = '24px';
-            })
-        }
-        if (xxxl.matches) {
-            layersliderText.forEach(text => {
-                text.style.left = '205px';
-                text.style.top = '90%';
-            })
-        }
     }
 })();

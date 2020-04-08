@@ -240,16 +240,10 @@ a[href^="https://maps.google.com/maps"] {
   }
   @media (min-width: 992px) {
     max-width: 960px;
+    top: -70px !important;
   }
   @media (min-width: 1200px) {
     max-width: 1140px;
-  }
-}
-
-h2.ls-layer {
-  font-size: 14px; // layerslider scales it down
-  @media (min-width: 1024px) {
-    font-size: 21px!important; // fixed size
   }
 }
 
@@ -266,18 +260,30 @@ h2.ls-layer {
 @media (max-width: 992px) {
   .ls-bottom-slidebuttons {
     bottom: .75rem !important;
+    a {
+      width: 8px!important;
+      height: 8px!important;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .ls-bottom-slidebuttons {
     bottom: .5rem !important;
+    a {
+      width: 5px!important;
+      height: 5px!important;
+    }
   }
 }
 
 @media (max-width: 576px) {
   .ls-bottom-slidebuttons {
     bottom: -.25rem !important;
+    a {
+      width: 4px!important;
+      height: 4px!important;
+    }
   }
 }
 
@@ -419,4 +425,17 @@ nav {
   a {
     color: #fff;
   }
+}
+
+// ls
+.lstext {
+position: absolute;
+top: -70px;
+left: 25px;
+width: 400px;
+color: white;
+text-transform: uppercase;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+font-size: 24px;
 }
